@@ -21,7 +21,16 @@ jobs:
       - name: Run optimization and audit
         shell: pwsh
         run: |
-          pwsh -NoProfile -ExecutionPolicy Bypass -File ./site/optimize-and-build.ps1 -Root "$GITHUB_WORKSPACE/site" -BaseUrl "https://yourdomain.example" -FailOnError
+          ./optimize-and-build.ps1 -Root "$env:GITHUB_WORKSPACE" -BaseUrl "https://www.448Plumbing.com" -FailOnError
+
+      - name: Upload audit and SEO reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-reports
+          path: |
+            site-audit-report.json
+            seo-report.json
 
       - name: Commit and push changes (if any)
         shell: bash
@@ -36,4 +45,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site/dist
+          publish_dir: ./dist
+          cname: www.448Plumbing.com
