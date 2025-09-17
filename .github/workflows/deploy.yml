@@ -15,8 +15,7 @@ jobs:
         with:
           persist-credentials: true
 
-      - name: Setup PowerShell
-        uses: PowerShell/PowerShell@v2
+      # pwsh is available by default on ubuntu-latest runners; no setup step needed
 
       - name: Run optimization and audit
         shell: pwsh
