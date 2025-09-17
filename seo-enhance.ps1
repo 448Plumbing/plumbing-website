@@ -111,7 +111,11 @@ foreach ($dir in $allTargets) {
 
     # Title extraction
     $titleMatch = [Regex]::Match($headBody, '(?is)<title>(.*?)</title>')
-    $title = if ($titleMatch.Success) { ($titleMatch.Groups[1].Value -replace '\s+', ' ').Trim() } else { "${baseName} | 448 Plumbing" }
+    if ($titleMatch.Success) {
+        $title = ($titleMatch.Groups[1].Value -replace '\s+', ' ').Trim()
+    } else {
+        $title = "${baseName} | 448 Plumbing"
+    }
 
     # Simple description heuristic
     $desc = 'Professional plumbing services in the Dallas–Fort Worth area. 24/7 emergency support, licensed & insured.'
@@ -125,11 +129,11 @@ foreach ($dir in $allTargets) {
     $ogImage = "$BaseUrl".TrimEnd('/') + '/assets/og-default.jpg'
 
     $beforeHeadBody = $headBody
-    $headBody = Ensure-Tag -HeadContent $headBody -Pattern '<link[^>]+rel=["\']canonical["\']' -Insertion "<link rel=\"canonical\" href=\"$canonical\" />"
+    $headBody = Ensure-Tag -HeadContent $headBody -Pattern '<link[^>]+rel=["'']canonical["'']' -Insertion ('<link rel="canonical" href="{0}" />' -f $canonical)
     if ($headBody -ne $beforeHeadBody) { $actions += 'add-canonical' }
 
     $before = $headBody
-    $headBody = Ensure-Tag -HeadContent $headBody -Pattern '<meta[^>]+name=["\']description["\']' -Insertion "<meta name=\"description\" content=\"$desc\" />"
+    $headBody = Ensure-Tag -HeadContent $headBody -Pattern '<meta[^>]+name=["'']description["'']' -Insertion ('<meta name="description" content="{0}" />' -f $desc)
     if ($headBody -ne $before) { $actions += 'add-description' }
 
     $ogPairs = @{
@@ -144,10 +148,14 @@ foreach ($dir in $allTargets) {
         'twitter:image'  = $ogImage
     }
     foreach ($kv in $ogPairs.GetEnumerator()) {
-        $prop = [Regex]::Escape($kv.Key)
-        $pattern = "<meta[^>]+(property|name)=[\"']$prop[\"']"
+    $prop = [Regex]::Escape($kv.Key)
+    $pattern = ('<meta[^>]+(property|name)=["'']{0}["'']' -f $prop)
         $beforeOG = $headBody
-        $insertion = if ($kv.Key -like 'og:*') { "<meta property=\"$($kv.Key)\" content=\"$($kv.Value)\" />" } else { "<meta name=\"$($kv.Key)\" content=\"$($kv.Value)\" />" }
+        if ($kv.Key -like 'og:*') {
+            $insertion = ('<meta property="{0}" content="{1}" />' -f $kv.Key, $kv.Value)
+        } else {
+            $insertion = ('<meta name="{0}" content="{1}" />' -f $kv.Key, $kv.Value)
+        }
         $headBody = Ensure-Tag -HeadContent $headBody -Pattern $pattern -Insertion $insertion
         if ($headBody -ne $beforeOG) { $actions += "add-${($kv.Key)}" }
     }
@@ -156,14 +164,12 @@ foreach ($dir in $allTargets) {
     $content = $content -replace '(?i)([^&])\bc\s+20(2[4-9]|3[0-9])', '$1© 2025'
     if ($content -ne $original) { $actions += 'fix-copyright' }
 
-    # Reassemble content with updated head
+    # Reassemble content with updated head (use substring to avoid regex escaping issues)
     $newHead = "$headOpen`n$headBody`n$headClose"
-    $content = [Regex]::Replace($content, $headPattern, [Regex]::Escape($newHead).Replace('\\','\\\\'), 1)
-    # The above escape may over-escape; fallback simple replace if regex fails
-    if (-not [Regex]::IsMatch($content, '(?is)<meta[^>]+canonical')) {
-        # fallback naive replace
-        $content = $content -replace $headPattern, [System.Text.RegularExpressions.MatchEvaluator]{ param($m) $newHead }
-    }
+    $prefix = $content.Substring(0, $headMatch.Index)
+    $suffixStart = $headMatch.Index + $headMatch.Length
+    $suffix = $content.Substring($suffixStart)
+    $content = "$prefix$newHead$suffix"
 
     $newHash = [System.BitConverter]::ToString(( [System.Security.Cryptography.SHA256]::Create()).ComputeHash([System.Text.Encoding]::UTF8.GetBytes($content))) -replace '-',''
 
@@ -176,7 +182,7 @@ foreach ($dir in $allTargets) {
     }
 
     if ($Flatten) {
-        $flatName = if ($pageKey -ieq 'index.html') { 'index.html' } else { $pageKey }
+        if ($pageKey -ieq 'index.html') { $flatName = 'index.html' } else { $flatName = $pageKey }
         $flatTarget = Join-Path $Root $flatName
         $flatSrcChanged = $false
         if ($Flatten -and (Test-Path $flatTarget -PathType Leaf)) {

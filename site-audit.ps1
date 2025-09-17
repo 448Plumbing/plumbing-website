@@ -12,7 +12,8 @@ function Log { param($Msg,[string]$Level='INFO'); Write-Host "[$((Get-Date).ToSt
 
 if (-not (Test-Path $Root -PathType Container)) { Write-Error "Root not found: $Root"; exit 1 }
 
-$htmlFiles = Get-ChildItem -Path $Root -Recurse -Include *.html,*.htm -File
+$htmlFiles = Get-ChildItem -Path $Root -Recurse -Include *.html,*.htm -File |
+  Where-Object { $_.FullName -notmatch '(?i)[\\/](dist|SEOBackup|AuditBackup|\.git|\.github)[\\/]' }
 if (-not $htmlFiles) { Log "No HTML files under $Root" 'WARN' }
 
 $backupDir = Join-Path $Root 'AuditBackup'
@@ -48,7 +49,8 @@ foreach ($file in $htmlFiles) {
   if ($content -notlike '*name="description"*') {
     $issues += 'missing-meta-description'
     if ($Fix -and -not $DryRun -and $content -like '*</head>*') {
-      $content = $content -replace '</head>', "  <meta name=\"description\" content=\"$descPlaceholder\" />`n</head>"
+      $insertion = ('  <meta name="description" content="{0}" />' -f $descPlaceholder) + "`n</head>"
+      $content = $content -replace '</head>', $insertion
       $actions += 'insert-description'
     }
   }
@@ -95,7 +97,13 @@ foreach ($file in $htmlFiles) {
     $href = $content.Substring($start, $end - $start)
     $hrefIndex = $end + 1
     if ($href -like 'http*' -or $href -like 'mailto:*' -or $href -like 'tel:*' -or $href -like '#*') { continue }
-    $target = $href.TrimStart('/')
+    # strip query and fragment
+    $hrefPath = $href.Split('#')[0].Split('?')[0]
+    # only consider HTML pages or directory-like links
+    $hrefLower = $hrefPath.ToLower()
+    $isHtmlish = ($hrefLower -match '\\.html?$') -or ($hrefLower -like '*/')
+    if (-not $isHtmlish) { continue }
+    $target = $hrefPath.TrimStart('/')
     if (-not $target) { continue }
     $normT = ($target).ToLower()
     if (-not $allRel.ContainsKey($normT)) {
