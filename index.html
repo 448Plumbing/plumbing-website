@@ -1,91 +1,45 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>448 Plumbing — Home</title>
-    <meta name="description" content="448 Plumbing — Licensed plumbers serving your area. Call today for fast, reliable service." />
-    <link rel="canonical" href="https://www.448Plumbing.com/" />
-    <meta http-equiv="refresh" content="0; url=/services.html" />
-  </head>
-  <body>
-    <p>Redirecting to <a href="/services.html">our services</a>…</p>
-    <noscript>
-      <p>JavaScript is disabled. Continue to <a href="/services.html">Services</a>.</p>
-    </noscript>
-  </body>
-  
-</html>
-<!doctype html>
-<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <base href="/">
   <title>448 Plumbing — Dallas / Fort Worth Emergency Plumbing & Repair</title>
   <meta name="description" content="448 Plumbing provides 24/7 emergency plumbing, drain cleaning, water heater repair, and leak detection across Dallas/Fort Worth.">
-  <link rel="icon" href="./assets/favicon.svg">
+  <link rel="canonical" href="https://www.448Plumbing.com/" />
+  <link rel="icon" href="/assets/favicon.svg">
+  <!-- Tailwind + theme -->
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/theme.css">
+  <!-- AOS (animations) -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-  <style>
-    :root{--brand:#2563eb;--brand-dark:#1d4ed8}
-    .brand{background:var(--brand)}
-    .btn-cta{background:var(--brand);color:white}
-    .hero-bg{background-image:linear-gradient(rgba(2,6,23,0.45),rgba(2,6,23,0.45)), url('./assets/hero-1200x630.svg');background-size:cover;background-position:center}
-  </style>
+  <!-- Shared header/footer loader -->
+  <script src="/assets/site.js" defer></script>
 </head>
 <body class="antialiased text-gray-800">
   <!-- Top bar -->
-  <div class="bg-brand text-white text-sm">
+  <div class="bg-black text-silver text-sm">
     <div class="max-w-6xl mx-auto px-4 flex justify-between items-center py-2">
       <div>Serving Dallas & Fort Worth — 24/7 Emergency Response</div>
       <div class="space-x-4">
-        <a href="tel:2147186990" class="hover:underline">214-718-6990</a>
-        <a href="mailto:inquiry@448plumbing.com" class="hover:underline">inquiry@448plumbing.com</a>
+        <a href="tel:2147186990" class="site-link">214-718-6990</a>
+        <a href="mailto:inquiry@448plumbing.com" class="site-link">inquiry@448plumbing.com</a>
       </div>
     </div>
   </div>
 
-  <!-- Header / Nav -->
-  <header class="bg-white shadow-sm">
-    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-      <a href="/index.html" class="flex items-center gap-3">
-        <img src="./assets/logo.svg" alt="448 Plumbing" width="128" height="32"/>
-        <span class="sr-only">448 Plumbing</span>
-      </a>
-      <nav class="hidden md:flex gap-6 items-center text-gray-700">
-        <a href="/about.html" class="hover:text-gray-900">About</a>
-        <a href="/services.html" class="hover:text-gray-900">Services</a>
-        <a href="/areas.html" class="hover:text-gray-900">Service Areas</a>
-        <a href="/blog.html" class="hover:text-gray-900">Blog</a>
-        <a href="/contact.html" class="px-4 py-2 rounded border border-gray-200 hover:bg-gray-50">Contact</a>
-        <a href="tel:2147186990" class="ml-2 btn-cta px-4 py-2 rounded-md">Call Now</a>
-      </nav>
-      <button id="mobileMenuBtn" class="md:hidden p-2">
-        <i data-feather="menu"></i>
-      </button>
-    </div>
-    <!-- mobile menu -->
-    <div id="mobileMenu" class="md:hidden hidden px-4 pb-4">
-      <a href="/about.html" class="block py-2">About</a>
-      <a href="/services.html" class="block py-2">Services</a>
-      <a href="/areas.html" class="block py-2">Service Areas</a>
-      <a href="/blog.html" class="block py-2">Blog</a>
-      <a href="/contact.html" class="block py-2">Contact</a>
-    </div>
-  </header>
+  <!-- Shared header -->
+  <div id="site-header"></div>
 
-  <!-- Hero -->
   <main>
-    <section class="hero-bg text-white py-20">
+    <!-- Hero -->
+    <section class="py-16 text-white site-hero">
       <div class="max-w-6xl mx-auto px-4 text-center" data-aos="fade-up">
         <h1 class="text-3xl md:text-5xl font-extrabold">Dallas / Fort Worth Plumbing Experts — 24/7</h1>
         <p class="mt-4 max-w-2xl mx-auto text-lg">Fast, licensed, and insured plumbers ready to handle emergencies, repairs, and installations. Transparent pricing — guaranteed workmanship.</p>
         <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
-          <a href="/contact.html" class="btn-cta px-6 py-3 rounded-md font-semibold">Schedule Service</a>
-          <a href="tel:2147186990" class="bg-white text-brand px-6 py-3 rounded-md font-semibold">Call Now: 214-718-6990</a>
+          <a href="/contact.html" class="site-btn site-btn-gold px-6 py-3 rounded-md font-semibold">Schedule Service</a>
+          <a href="tel:2147186990" class="site-btn-dark px-6 py-3 rounded-md font-semibold">Call Now: 214-718-6990</a>
         </div>
       </div>
     </section>
@@ -122,28 +76,28 @@
       <div class="max-w-6xl mx-auto px-4">
         <div class="flex items-center justify-between">
           <h2 class="text-2xl font-bold">Our Services</h2>
-          <a href="/services.html" class="text-brand hover:underline">View all services →</a>
+          <a href="/services.html" class="site-link">View all services →</a>
         </div>
         <div class="grid md:grid-cols-3 gap-6 mt-6">
           <article class="bg-white p-6 rounded-md shadow-sm" data-aos="fade-up">
             <img src="./assets/service-1-640x360.svg" alt="Emergency Plumbing" class="w-full h-40 object-cover rounded">
             <h3 class="mt-4 text-xl font-semibold">Emergency Plumbing</h3>
             <p class="mt-2 text-gray-600">Rapid response for leaks, bursts, and urgent plumbing failures. Available 24/7.</p>
-            <a href="/services-emergency.html" class="mt-4 inline-block text-brand hover:underline">Learn more →</a>
+            <a href="/services-emergency.html" class="mt-4 inline-block site-link">Learn more →</a>
           </article>
 
           <article class="bg-white p-6 rounded-md shadow-sm" data-aos="fade-up" data-aos-delay="100">
             <img src="./assets/service-2-640x360.svg" alt="Drain Cleaning" class="w-full h-40 object-cover rounded">
             <h3 class="mt-4 text-xl font-semibold">Drain Cleaning</h3>
             <p class="mt-2 text-gray-600">Thorough drain clearing and preventive maintenance to keep water moving freely.</p>
-            <a href="/services-drain.html" class="mt-4 inline-block text-brand hover:underline">Learn more →</a>
+            <a href="/services-drain.html" class="mt-4 inline-block site-link">Learn more →</a>
           </article>
 
           <article class="bg-white p-6 rounded-md shadow-sm" data-aos="fade-up" data-aos-delay="200">
             <img src="./assets/service-3-640x360.svg" alt="Water Heater" class="w-full h-40 object-cover rounded">
             <h3 class="mt-4 text-xl font-semibold">Water Heater Repair & Installation</h3>
             <p class="mt-2 text-gray-600">Repair, replace, and maintain tank and tankless water heaters for reliable hot water.</p>
-            <a href="/services-heater.html" class="mt-4 inline-block text-brand hover:underline">Learn more →</a>
+            <a href="/services-heater.html" class="mt-4 inline-block site-link">Learn more →</a>
           </article>
         </div>
       </div>
@@ -168,51 +122,41 @@
       </div>
     </section>
 
-    <!-- CTA strip -->
-    <section class="brand text-white py-8">
-      <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between">
-        <div>
+    <!-- Final CTA strip -->
+    <section class="py-8">
+      <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between bg-black text-silver rounded-md">
+        <div class="py-6">
           <h3 class="text-xl font-bold">Need a plumber now?</h3>
           <p class="text-sm">Call our emergency line for fast dispatch across Dallas/Fort Worth.</p>
         </div>
-        <div class="mt-4 sm:mt-0">
-          <a href="tel:2147186990" class="bg-white text-brand px-6 py-3 rounded-md font-semibold">214-718-6990</a>
+        <div class="mt-4 sm:mt-0 pb-6">
+          <a href="tel:2147186990" class="site-btn-gold px-6 py-3 rounded-md font-semibold">214-718-6990</a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-gray-300 py-12">
-    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
-      <div>
-        <h4 class="text-white font-bold">448 Plumbing</h4>
-        <p class="mt-3 text-sm">Licensed plumbers serving Dallas / Fort Worth. Master plumber on staff. Insured and bonded.</p>
-      </div>
-      <div>
-        <h4 class="text-white font-bold">Quick Links</h4>
-        <ul class="mt-3 space-y-2 text-sm">
-          <li><a href="/services.html" class="hover:underline">Services</a></li>
-          <li><a href="/about.html" class="hover:underline">About</a></li>
-          <li><a href="/contact.html" class="hover:underline">Contact</a></li>
-          <li><a href="/blog.html" class="hover:underline">Blog</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 class="text-white font-bold">Contact</h4>
-        <p class="mt-3 text-sm">214-718-6990<br>inquiry@448plumbing.com</p>
-      </div>
-    </div>
-    <div class="border-t border-gray-800 mt-8 pt-6 text-center text-sm text-gray-500">© 2025 448 Plumbing. All rights reserved.</div>
-  </footer>
+  <!-- Shared footer -->
+  <div id="site-footer"></div>
 
-  <script>
-    // mobile menu toggle
-    document.getElementById('mobileMenuBtn').addEventListener('click', function(){
-      document.getElementById('mobileMenu').classList.toggle('hidden');
-    });
-    document.addEventListener('DOMContentLoaded', function(){ if (typeof AOS !== 'undefined') AOS.init(); if (typeof feather !== 'undefined') feather.replace(); });
+  <!-- AOS & Feather (optional) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script> if (typeof AOS !== 'undefined') AOS.init(); if (typeof feather !== 'undefined') feather.replace(); </script>
+
+  <!-- JSON-LD LocalBusiness schema for local SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Plumber",
+    "name": "448 Plumbing",
+    "url": "https://www.448Plumbing.com/",
+    "telephone": "214-718-6990",
+    "priceRange": "$$",
+    "areaServed": ["Dallas", "Fort Worth", "Arlington", "Plano", "Richardson"]
+  }
   </script>
+
 </body>
 </html>

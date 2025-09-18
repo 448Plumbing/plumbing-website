@@ -19,6 +19,8 @@ h1,h2,h3,h4,h5,h6{ color:var(--black); }
 /* Links */
 a { color: var(--gold); text-decoration: none; }
 a:hover, a:focus { color: var(--black); background-color: var(--gold); }
+/* Active nav link helper */
+.active { border-bottom: 2px solid var(--gold); }
 
 /* Primary CTA button styles */
 .btn-primary, .site-btn-gold, .btn-cta { background: var(--gold); color: var(--black); border: none; }
