@@ -13,6 +13,19 @@ async function boot() {
   if (headerC) await loadPartial('site-header', '/partials/header.html');
   if (footerC) await loadPartial('site-footer', '/partials/footer.html');
 
+  // Force-refresh theme.css to avoid CDN/browser cache after updates
+  try {
+    const links = Array.from(document.querySelectorAll('link[rel="stylesheet"]'));
+    links.forEach(l => {
+      const href = l.getAttribute('href') || '';
+      if (href.includes('/assets/theme.css')) {
+        const url = new URL(href, window.location.origin);
+        url.searchParams.set('v', String(Math.floor(Date.now() / 1000)));
+        l.setAttribute('href', url.pathname + '?' + url.searchParams.toString());
+      }
+    });
+  } catch {}
+
   // After injection, wire up mobile menu
   const btn = document.getElementById('mobileMenuBtn');
   const menu = document.getElementById('mobileMenu');
