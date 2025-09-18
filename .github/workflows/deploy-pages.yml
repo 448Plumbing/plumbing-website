@@ -25,10 +25,22 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      - name: Build static site into dist
+      - name: Optimize, audit and build
         shell: pwsh
         run: |
-          ./scripts/build-static.ps1 -Root "$PWD" -Domain "www.448Plumbing.com"
+          ./optimize-and-build.ps1 -Root "$PWD" -BaseUrl "https://www.448Plumbing.com" -FailOnError
+
+      - name: Ensure CNAME in dist
+        run: echo "www.448Plumbing.com" > ./dist/CNAME
+
+      - name: Upload audit and SEO reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-reports
+          path: |
+            site-audit-report.json
+            seo-report.json
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
