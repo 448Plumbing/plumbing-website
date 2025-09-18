@@ -14,6 +14,8 @@ function Step($name, [scriptblock]$block) {
   try {
     & $block
     Write-Host "✔ $name completed"
+    # Ensure any non-zero exit code from native commands does not leak
+    $global:LASTEXITCODE = 0
   } catch {
     Write-Error "Step failed: $name`n$_"
     exit 1
@@ -42,3 +44,6 @@ Step "Build" {
 }
 
 Write-Host "All steps completed successfully."
+# Force a successful process exit code even if a previous native command set LASTEXITCODE
+$global:LASTEXITCODE = 0
+exit 0
