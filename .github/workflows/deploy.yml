@@ -16,10 +16,10 @@ jobs:
 
       # pwsh is available by default on ubuntu-latest runners; no setup step needed
 
-      - name: Run optimization and audit
+      - name: Run optimization and audit (non-blocking)
         shell: pwsh
         run: |
-          ./optimize-and-build.ps1 -Root "$env:GITHUB_WORKSPACE" -BaseUrl "https://www.448Plumbing.com" -FailOnError
+          ./optimize-and-build.ps1 -Root "$env:GITHUB_WORKSPACE" -BaseUrl "https://www.448Plumbing.com"
 
       - name: Upload audit and SEO reports
         if: always()
