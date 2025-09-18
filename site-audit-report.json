@@ -1,0 +1,3900 @@
+{
+  "RunDate": "2025-09-17 16:42:39Z",
+  "Root": "C:\\workspace\\site",
+  "FixMode": true,
+  "DryRun": false,
+  "Files": [
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\services.html\\index.html",
+      "Relative": "desktop-site/services.html/index.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\abstract.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/abstract.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\allocation.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/allocation.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\apiabiversion.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/apiabiversion.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\arg.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/arg.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\bool.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/bool.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\buffer.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/buffer.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\bytearray.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/bytearray.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\bytes.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/bytes.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\call.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/call.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\capsule.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/capsule.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\cell.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/cell.html",
+      "Issues": "duplicate-id:c.PyCell_Get;duplicate-id:c.PyCell_Set;duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\code.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/code.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\codec.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/codec.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\complex.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/complex.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\concrete.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/concrete.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\contextvars.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/contextvars.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\conversion.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/conversion.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\coro.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/coro.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\datetime.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/datetime.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\descriptor.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/descriptor.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\dict.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/dict.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\exceptions.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/exceptions.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\file.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/file.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\float.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/float.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\frame.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/frame.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\function.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/function.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\gcsupport.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/gcsupport.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\gen.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/gen.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\hash.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/hash.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\import.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/import.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\index.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/index.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\init_config.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/init_config.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\init.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/init.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\intro.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/intro.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\iter.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/iter.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\iterator.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/iterator.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\list.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/list.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\long.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/long.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\mapping.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/mapping.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\marshal.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/marshal.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\memory.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/memory.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\memoryview.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/memoryview.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\method.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/method.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\module.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/module.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\monitoring.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/monitoring.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\none.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/none.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\number.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/number.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\object.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/object.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\objimpl.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/objimpl.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\perfmaps.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/perfmaps.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\refcounting.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/refcounting.html",
+      "Issues": "duplicate-id:c.Py_DECREF;duplicate-id:c.Py_INCREF;duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\reflection.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/reflection.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\sequence.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/sequence.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\set.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/set.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\slice.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/slice.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\stable.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/stable.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\structures.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/structures.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\sys.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/sys.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\time.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/time.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\tuple.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/tuple.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\type.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/type.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\typehints.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/typehints.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\typeobj.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/typeobj.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\unicode.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/unicode.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\utilities.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/utilities.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\veryhigh.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/veryhigh.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\c-api\\weakref.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/c-api/weakref.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\deprecations\\c-api-pending-removal-in-3.14.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/deprecations/c-api-pending-removal-in-3.14.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\deprecations\\c-api-pending-removal-in-3.15.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/deprecations/c-api-pending-removal-in-3.15.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\deprecations\\c-api-pending-removal-in-3.16.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/deprecations/c-api-pending-removal-in-3.16.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\deprecations\\c-api-pending-removal-in-future.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/deprecations/c-api-pending-removal-in-future.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\deprecations\\index.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/deprecations/index.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\deprecations\\pending-removal-in-3.13.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/deprecations/pending-removal-in-3.13.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\deprecations\\pending-removal-in-3.14.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/deprecations/pending-removal-in-3.14.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\deprecations\\pending-removal-in-3.15.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/deprecations/pending-removal-in-3.15.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\deprecations\\pending-removal-in-3.16.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/deprecations/pending-removal-in-3.16.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\deprecations\\pending-removal-in-future.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/deprecations/pending-removal-in-future.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\distributing\\index.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/distributing/index.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\extending\\building.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/extending/building.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\extending\\embedding.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/extending/embedding.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\extending\\extending.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/extending/extending.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\extending\\index.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/extending/index.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\extending\\newtypes_tutorial.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/extending/newtypes_tutorial.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\extending\\newtypes.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/extending/newtypes.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\extending\\windows.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/extending/windows.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\faq\\design.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/faq/design.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\faq\\extending.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/faq/extending.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\faq\\general.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/faq/general.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\faq\\gui.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/faq/gui.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\faq\\index.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/faq/index.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\faq\\installed.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/faq/installed.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\faq\\library.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/faq/library.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\faq\\programming.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/faq/programming.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\faq\\windows.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/faq/windows.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\a-conceptual-overview-of-asyncio.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/a-conceptual-overview-of-asyncio.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\annotations.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/annotations.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\argparse-optparse.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/argparse-optparse.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\argparse.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/argparse.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\clinic.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/clinic.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\cporting.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/cporting.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\curses.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/curses.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\descriptor.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/descriptor.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\enum.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/enum.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\free-threading-extensions.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/free-threading-extensions.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\free-threading-python.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/free-threading-python.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\functional.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/functional.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\gdb_helpers.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/gdb_helpers.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\index.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/index.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\instrumentation.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/instrumentation.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\ipaddress.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/ipaddress.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\isolating-extensions.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/isolating-extensions.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\logging-cookbook.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/logging-cookbook.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\logging.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/logging.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\mro.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/mro.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\perf_profiling.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/perf_profiling.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\pyporting.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/pyporting.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\regex.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/regex.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\sockets.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/sockets.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\sorting.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/sorting.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\timerfd.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/timerfd.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\unicode.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/unicode.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\howto\\urllib2.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/howto/urllib2.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\installing\\index.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/installing/index.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\__future__.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/__future__.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\__main__.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/__main__.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\_thread.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/_thread.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\abc.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/abc.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\aifc.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/aifc.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\allos.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/allos.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\archiving.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/archiving.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\argparse.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/argparse.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\array.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/array.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\ast.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/ast.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\asynchat.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/asynchat.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\asyncio-api-index.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/asyncio-api-index.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\asyncio-dev.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/asyncio-dev.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\asyncio-eventloop.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/asyncio-eventloop.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\asyncio-exceptions.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/asyncio-exceptions.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\asyncio-extending.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/asyncio-extending.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\asyncio-future.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/asyncio-future.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\asyncio-llapi-index.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/asyncio-llapi-index.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\asyncio-platforms.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/asyncio-platforms.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\asyncio-policy.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/asyncio-policy.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\asyncio-protocol.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/asyncio-protocol.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\asyncio-queue.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/asyncio-queue.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\asyncio-runner.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/asyncio-runner.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\asyncio-stream.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/asyncio-stream.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\asyncio-subprocess.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/asyncio-subprocess.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\asyncio-sync.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/asyncio-sync.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\asyncio-task.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/asyncio-task.html",
+      "Issues": "duplicate-id:asyncio.timeout;duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\asyncio.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/asyncio.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\asyncore.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/asyncore.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\atexit.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/atexit.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\audioop.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/audioop.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\audit_events.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/audit_events.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\base64.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/base64.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\bdb.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/bdb.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\binary.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/binary.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\binascii.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/binascii.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\bisect.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/bisect.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\builtins.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/builtins.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\bz2.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/bz2.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\calendar.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/calendar.html",
+      "Issues": "duplicate-id:calendar.Calendar;duplicate-id:calendar.month;duplicate-id:cmdoption-calendar-L;duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\cgi.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/cgi.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\cgitb.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/cgitb.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\chunk.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/chunk.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\cmath.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/cmath.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\cmd.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/cmd.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\cmdline.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/cmdline.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\cmdlinelibs.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/cmdlinelibs.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\code.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/code.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\codecs.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/codecs.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\codeop.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/codeop.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\collections.abc.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/collections.abc.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\collections.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/collections.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\colorsys.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/colorsys.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\compileall.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/compileall.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\concurrency.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/concurrency.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\concurrent.futures.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/concurrent.futures.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\concurrent.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/concurrent.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\configparser.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/configparser.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\constants.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/constants.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\contextlib.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/contextlib.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\contextvars.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/contextvars.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\copy.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/copy.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\copyreg.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/copyreg.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\crypt.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/crypt.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\crypto.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/crypto.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\csv.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/csv.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\ctypes.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/ctypes.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:ctypes.Array;duplicate-id:ctypes.POINTER;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\curses.ascii.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/curses.ascii.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\curses.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/curses.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\curses.panel.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/curses.panel.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\custominterp.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/custominterp.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\dataclasses.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/dataclasses.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:dataclasses.field;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\datatypes.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/datatypes.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\datetime.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/datetime.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\dbm.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/dbm.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\debug.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/debug.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\decimal.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/decimal.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\development.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/development.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\devmode.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/devmode.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\dialog.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/dialog.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\difflib.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/difflib.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\dis.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/dis.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\distribution.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/distribution.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\distutils.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/distutils.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\doctest.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/doctest.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\email.charset.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/email.charset.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\email.compat32-message.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/email.compat32-message.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\email.contentmanager.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/email.contentmanager.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\email.encoders.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/email.encoders.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\email.errors.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/email.errors.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\email.examples.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/email.examples.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\email.generator.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/email.generator.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\email.header.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/email.header.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\email.headerregistry.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/email.headerregistry.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\email.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/email.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\email.iterators.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/email.iterators.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\email.message.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/email.message.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\email.mime.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/email.mime.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\email.parser.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/email.parser.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\email.policy.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/email.policy.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:email.policy.Compat32;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\email.utils.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/email.utils.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\ensurepip.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/ensurepip.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\enum.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/enum.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\errno.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/errno.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\exceptions.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/exceptions.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\faulthandler.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/faulthandler.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\fcntl.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/fcntl.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\filecmp.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/filecmp.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\fileformats.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/fileformats.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\fileinput.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/fileinput.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\filesys.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/filesys.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\fnmatch.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/fnmatch.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\fractions.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/fractions.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\frameworks.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/frameworks.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\ftplib.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/ftplib.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\functional.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/functional.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\functions.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/functions.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\functools.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/functools.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\gc.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/gc.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\getopt.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/getopt.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\getpass.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/getpass.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\gettext.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/gettext.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\glob.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/glob.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\graphlib.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/graphlib.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\grp.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/grp.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\gzip.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/gzip.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\hashlib.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/hashlib.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\heapq.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/heapq.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\hmac.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/hmac.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\html.entities.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/html.entities.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\html.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/html.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\html.parser.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/html.parser.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\http.client.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/http.client.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\http.cookiejar.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/http.cookiejar.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\http.cookies.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/http.cookies.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\http.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/http.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\http.server.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/http.server.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\i18n.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/i18n.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\idle.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/idle.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\imaplib.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/imaplib.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\imghdr.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/imghdr.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\imp.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/imp.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\importlib.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/importlib.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\importlib.metadata.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/importlib.metadata.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:importlib.metadata.distribution;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\importlib.resources.abc.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/importlib.resources.abc.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\importlib.resources.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/importlib.resources.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\index.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/index.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\inspect.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/inspect.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:inspect.signature;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\internet.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/internet.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\intro.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/intro.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\io.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/io.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\ipaddress.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/ipaddress.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\ipc.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/ipc.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\itertools.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/itertools.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\json.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/json.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\keyword.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/keyword.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\language.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/language.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\linecache.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/linecache.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\locale.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/locale.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\logging.config.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/logging.config.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\logging.handlers.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/logging.handlers.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\logging.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/logging.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:logging.CRITICAL;duplicate-id:logging.DEBUG;duplicate-id:logging.ERROR;duplicate-id:logging.INFO;duplicate-id:logging.WARNING;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\lzma.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/lzma.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\mailbox.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/mailbox.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\mailcap.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/mailcap.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\markup.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/markup.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\marshal.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/marshal.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\math.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/math.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\mimetypes.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/mimetypes.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\mm.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/mm.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\mmap.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/mmap.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\modulefinder.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/modulefinder.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\modules.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/modules.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\msilib.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/msilib.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\msvcrt.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/msvcrt.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\multiprocessing.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/multiprocessing.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\multiprocessing.shared_memory.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/multiprocessing.shared_memory.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\netdata.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/netdata.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\netrc.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/netrc.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\nis.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/nis.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\nntplib.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/nntplib.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\numbers.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/numbers.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\numeric.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/numeric.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\operator.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/operator.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\optparse.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/optparse.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\os.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/os.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\os.path.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/os.path.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\ossaudiodev.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/ossaudiodev.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\pathlib.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/pathlib.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\pdb.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/pdb.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\persistence.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/persistence.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\pickle.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/pickle.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\pickletools.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/pickletools.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\pipes.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/pipes.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\pkgutil.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/pkgutil.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\platform.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/platform.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\plistlib.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/plistlib.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\poplib.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/poplib.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\posix.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/posix.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\pprint.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/pprint.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\profile.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/profile.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\pty.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/pty.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\pwd.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/pwd.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\py_compile.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/py_compile.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\pyclbr.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/pyclbr.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\pydoc.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/pydoc.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\pyexpat.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/pyexpat.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\python.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/python.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\queue.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/queue.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\quopri.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/quopri.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\random.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/random.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:random.random;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\re.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/re.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:re.match;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\readline.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/readline.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\removed.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/removed.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\reprlib.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/reprlib.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:reprlib.Repr;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\resource.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/resource.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\rlcompleter.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/rlcompleter.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\runpy.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/runpy.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\sched.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/sched.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\secrets.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/secrets.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\security_warnings.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/security_warnings.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\select.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/select.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\selectors.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/selectors.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\shelve.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/shelve.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\shlex.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/shlex.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\shutil.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/shutil.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\signal.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/signal.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\site.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/site.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\smtpd.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/smtpd.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\smtplib.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/smtplib.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\sndhdr.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/sndhdr.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\socket.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/socket.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\socketserver.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/socketserver.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\spwd.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/spwd.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\sqlite3.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/sqlite3.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\ssl.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/ssl.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\stat.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/stat.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\statistics.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/statistics.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\stdtypes.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/stdtypes.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\string.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/string.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\stringprep.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/stringprep.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\struct.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/struct.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\subprocess.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/subprocess.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\sunau.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/sunau.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\superseded.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/superseded.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\symtable.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/symtable.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\sys_path_init.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/sys_path_init.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\sys.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/sys.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\sys.monitoring.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/sys.monitoring.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\sysconfig.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/sysconfig.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\syslog.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/syslog.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\tabnanny.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/tabnanny.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\tarfile.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/tarfile.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\telnetlib.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/telnetlib.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\tempfile.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/tempfile.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\termios.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/termios.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\test.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/test.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\text.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/text.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\textwrap.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/textwrap.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\threading.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/threading.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\time.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/time.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\timeit.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/timeit.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\tk.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/tk.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\tkinter.colorchooser.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/tkinter.colorchooser.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\tkinter.dnd.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/tkinter.dnd.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\tkinter.font.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/tkinter.font.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\tkinter.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/tkinter.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\tkinter.messagebox.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/tkinter.messagebox.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\tkinter.scrolledtext.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/tkinter.scrolledtext.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\tkinter.ttk.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/tkinter.ttk.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\token.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/token.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\tokenize.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/tokenize.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\tomllib.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/tomllib.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\trace.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/trace.html",
+      "Issues": "duplicate-id:cmdoption-trace-c;duplicate-id:cmdoption-trace-r;duplicate-id:cmdoption-trace-t;duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\traceback.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/traceback.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\tracemalloc.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/tracemalloc.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\tty.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/tty.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\turtle.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/turtle.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box;duplicate-id:turtle.shape",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\types.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/types.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\typing.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/typing.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box;duplicate-id:typing.Final",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\unicodedata.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/unicodedata.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\unittest.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/unittest.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\unittest.mock-examples.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/unittest.mock-examples.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\unittest.mock.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/unittest.mock.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\unix.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/unix.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\urllib.error.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/urllib.error.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\urllib.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/urllib.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\urllib.parse.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/urllib.parse.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\urllib.request.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/urllib.request.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\urllib.robotparser.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/urllib.robotparser.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\uu.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/uu.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\uuid.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/uuid.html",
+      "Issues": "duplicate-id:cmdoption-uuid-n;duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\venv.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/venv.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\warnings.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/warnings.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\wave.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/wave.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\weakref.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/weakref.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\webbrowser.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/webbrowser.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\windows.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/windows.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\winreg.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/winreg.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\winsound.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/winsound.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\wsgiref.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/wsgiref.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\xdrlib.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/xdrlib.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\xml.dom.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/xml.dom.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\xml.dom.minidom.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/xml.dom.minidom.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\xml.dom.pulldom.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/xml.dom.pulldom.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\xml.etree.elementtree.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/xml.etree.elementtree.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\xml.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/xml.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\xml.sax.handler.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/xml.sax.handler.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\xml.sax.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/xml.sax.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\xml.sax.reader.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/xml.sax.reader.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\xml.sax.utils.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/xml.sax.utils.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\xmlrpc.client.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/xmlrpc.client.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\xmlrpc.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/xmlrpc.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\xmlrpc.server.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/xmlrpc.server.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\zipapp.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/zipapp.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\zipfile.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/zipfile.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box;duplicate-id:zipfile.BadZipFile",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\zipimport.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/zipimport.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\zlib.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/zlib.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\library\\zoneinfo.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/library/zoneinfo.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\reference\\compound_stmts.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/reference/compound_stmts.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\reference\\datamodel.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/reference/datamodel.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\reference\\executionmodel.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/reference/executionmodel.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\reference\\expressions.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/reference/expressions.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\reference\\grammar.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/reference/grammar.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\reference\\import.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/reference/import.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\reference\\index.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/reference/index.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\reference\\introduction.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/reference/introduction.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\reference\\lexical_analysis.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/reference/lexical_analysis.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\reference\\simple_stmts.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/reference/simple_stmts.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\reference\\toplevel_components.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/reference/toplevel_components.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\tutorial\\appendix.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/tutorial/appendix.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\tutorial\\appetite.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/tutorial/appetite.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\tutorial\\classes.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/tutorial/classes.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\tutorial\\controlflow.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/tutorial/controlflow.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\tutorial\\datastructures.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/tutorial/datastructures.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\tutorial\\errors.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/tutorial/errors.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\tutorial\\floatingpoint.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/tutorial/floatingpoint.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\tutorial\\index.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/tutorial/index.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\tutorial\\inputoutput.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/tutorial/inputoutput.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\tutorial\\interactive.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/tutorial/interactive.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\tutorial\\interpreter.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/tutorial/interpreter.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\tutorial\\introduction.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/tutorial/introduction.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\tutorial\\modules.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/tutorial/modules.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\tutorial\\stdlib.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/tutorial/stdlib.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\tutorial\\stdlib2.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/tutorial/stdlib2.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\tutorial\\venv.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/tutorial/venv.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\tutorial\\whatnow.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/tutorial/whatnow.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\using\\android.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/using/android.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\using\\cmdline.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/using/cmdline.html",
+      "Issues": "duplicate-id:cmdoption-b;duplicate-id:cmdoption-i;duplicate-id:cmdoption-s;duplicate-id:cmdoption-V;duplicate-id:cmdoption-x;duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\using\\configure.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/using/configure.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\using\\editors.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/using/editors.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\using\\index.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/using/index.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\using\\ios.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/using/ios.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\using\\mac.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/using/mac.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\using\\unix.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/using/unix.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\using\\windows.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/using/windows.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\whatsnew\\2.0.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/whatsnew/2.0.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\whatsnew\\2.1.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/whatsnew/2.1.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\whatsnew\\2.2.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/whatsnew/2.2.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\whatsnew\\2.3.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/whatsnew/2.3.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\whatsnew\\2.4.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/whatsnew/2.4.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\whatsnew\\2.5.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/whatsnew/2.5.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\whatsnew\\2.6.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/whatsnew/2.6.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\whatsnew\\2.7.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/whatsnew/2.7.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\whatsnew\\3.0.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/whatsnew/3.0.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\whatsnew\\3.1.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/whatsnew/3.1.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\whatsnew\\3.10.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/whatsnew/3.10.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\whatsnew\\3.11.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/whatsnew/3.11.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\whatsnew\\3.12.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/whatsnew/3.12.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\whatsnew\\3.13.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/whatsnew/3.13.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\whatsnew\\3.2.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/whatsnew/3.2.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\whatsnew\\3.3.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/whatsnew/3.3.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\whatsnew\\3.4.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/whatsnew/3.4.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\whatsnew\\3.5.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/whatsnew/3.5.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\whatsnew\\3.6.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/whatsnew/3.6.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\whatsnew\\3.7.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/whatsnew/3.7.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\whatsnew\\3.8.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/whatsnew/3.8.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\whatsnew\\3.9.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/whatsnew/3.9.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\whatsnew\\changelog.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/whatsnew/changelog.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\whatsnew\\index.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/whatsnew/index.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\404.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/404.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\about.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/about.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\bugs.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/bugs.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\contents.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/contents.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\copyright.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/copyright.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\download.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/download.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-_.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-_.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-A.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-A.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-all.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-all.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-B.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-B.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-C.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-C.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-D.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-D.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-E.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-E.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-F.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-F.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-G.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-G.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-H.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-H.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-I.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-I.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-J.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-J.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-K.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-K.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-L.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-L.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-M.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-M.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-N.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-N.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-O.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-O.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-P.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-P.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-Q.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-Q.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-R.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-R.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-S.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-S.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-Symbols.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-Symbols.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-T.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-T.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-U.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-U.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-V.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-V.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-W.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-W.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-X.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-X.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-Y.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-Y.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex-Z.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex-Z.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\genindex.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/genindex.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\glossary.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/glossary.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\index.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/index.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\license.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/license.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\py-modindex.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/py-modindex.html",
+      "Issues": "duplicate-id:cpython-language-and-version;duplicate-id:search-box",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Doc\\html\\search.html",
+      "Relative": "desktop-site/webstie building install/Doc/html/search.html",
+      "Issues": "duplicate-id:cpython-language-and-version",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Lib\\idlelib\\help.html",
+      "Relative": "desktop-site/webstie building install/Lib/idlelib/help.html",
+      "Issues": "missing-lang;missing-meta-description",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Lib\\test\\test_difflib_expect.html",
+      "Relative": "desktop-site/webstie building install/Lib/test/test_difflib_expect.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\about.html",
+      "Relative": "about.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\areas.html",
+      "Relative": "areas.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\contact.html",
+      "Relative": "contact.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\index.html",
+      "Relative": "index.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\privacy.html",
+      "Relative": "privacy.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\services.html",
+      "Relative": "services.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\sitemap.html",
+      "Relative": "sitemap.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\team.html",
+      "Relative": "team.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\workspace\\site\\terms.html",
+      "Relative": "terms.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    }
+  ]
+}

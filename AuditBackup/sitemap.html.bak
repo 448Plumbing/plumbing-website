@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sitemap — 448 Plumbing</title>
+  <link rel="icon" href="./assets/favicon.svg">
+  <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/theme.css">
+</head>
+<body class="antialiased">
+  <a href="index.html">← Home</a>
+  <h1 class="text-2xl mt-4">Sitemap</h1>
+  <ul class="mt-2">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="areas.html">Service Areas</a></li>
+  <li><a href="https://www.instagram.com/448plumbing/#" target="_blank" rel="noopener" class="contact-button">Contact</a></li>
+  </ul>
+</body>
+</html>

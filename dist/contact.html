@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact — 448 Plumbing</title>
+  <link rel="icon" href="./assets/favicon.svg">
+  <link href="https://cdn.tailwindcss.com" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/theme.css">
+  <meta name="description" content="Local professional plumbing services in Dallas Fort Worth area." />
+</head>
+<body class="antialiased">
+  <a href="index.html">← Home</a>
+  <h1 class="text-2xl mt-4">Contact Us</h1>
+  <form id="contactForm" class="mt-4 max-w-lg">
+    <label class="block mb-2">Name<input name="name" class="w-full border p-2"/></label>
+    <label class="block mb-2">Email<input name="email" type="email" class="w-full border p-2"/></label>
+    <label class="block mb-2">Message<textarea name="message" class="w-full border p-2"></textarea></label>
+  <button type="submit" class="mt-2 site-btn-gold px-4 py-2 rounded">Send</button>
+  </form>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', async function(e){
+      e.preventDefault();
+      alert('This is a static preview. To send messages configure a server.');
+    });
+  </script>
+</body>
+</html>
