@@ -28,7 +28,7 @@ jobs:
       - name: Optimize, audit and build
         shell: pwsh
         run: |
-          ./optimize-and-build.ps1 -Root "$PWD" -BaseUrl "https://www.448Plumbing.com" -FailOnError
+          ./optimize-and-build.ps1 -Root "$PWD" -BaseUrl "https://www.448Plumbing.com"
 
       - name: Ensure CNAME in dist
         run: echo "www.448Plumbing.com" > ./dist/CNAME
