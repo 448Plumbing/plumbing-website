@@ -18,10 +18,15 @@ function Copy-Static {
 
   $files = Get-ChildItem -Path $Src -Recurse -File
   foreach ($file in $files) {
-    $rel = [System.IO.Path]::GetRelativePath($Src, $file.FullName).TrimStart('\\','/')
+    $rel = [System.IO.Path]::GetRelativePath($Src, $file.FullName)
+    # Normalize separators to forward slashes for consistent matching and publishing
+    $rel = $rel -replace "\\", "/"
+    if ($rel.StartsWith("/")) { $rel = $rel.Substring(1) }
+
     $skip = $false
     foreach ($ex in $exclude) {
-      if ($rel -like "$ex*" -or $rel -eq $ex) { $skip = $true; break }
+      $exNorm = $ex -replace "\\", "/"
+      if ($rel -like "$exNorm*" -or $rel -eq $exNorm) { $skip = $true; break }
     }
     if ($skip) { continue }
     $destPath = Join-Path $Dst $rel
