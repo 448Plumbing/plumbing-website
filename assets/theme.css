@@ -37,6 +37,26 @@ header .brand-name { color: var(--silver); }
   .brand-logo { height: 48px; }
 }
 
+/* Tri-color brand text (black, silver, gold) with readable outline on dark header */
+.brand-name--tri {
+  /* Fallback if text-clip unsupported */
+  color: var(--gold);
+  background: linear-gradient(
+    90deg,
+    var(--gold) 0%,
+    var(--silver) 35%,
+    var(--black) 55%,
+    var(--gold) 80%,
+    var(--silver) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* Subtle stroke to keep black segments legible on dark header */
+  -webkit-text-stroke: 0.6px rgba(255,255,255,0.35);
+  text-shadow: 0 0 0 rgba(0,0,0,0); /* ensures consistent subpixel rendering */
+}
+
 /* Headings */
 h1,h2,h3,h4,h5,h6{ color:var(--black); }
 
