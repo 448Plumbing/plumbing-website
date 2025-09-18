@@ -1,0 +1,10 @@
+# Build outputs and backups
+/dist/
+/site-dist-*.zip
+/SEOBackup/
+/AuditBackup/
+
+# System/editor junk
+.DS_Store
+Thumbs.db
+.vscode/
