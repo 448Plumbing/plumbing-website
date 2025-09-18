@@ -118,7 +118,7 @@ foreach ($dir in $allTargets) {
     }
 
     # Simple description heuristic
-    $desc = 'Professional plumbing services in the Dallas–Fort Worth area. 24/7 emergency support, licensed & insured.'
+    $desc = 'Professional plumbing services in the Dallas–Fort Worth area. We offer reliable emergency plumbing services during standard and extended hours — licensed & insured.'
     $pMatch = [Regex]::Match($content, '(?is)<p[^>]*>(.{60,600}?)</p>')
     if ($pMatch.Success) {
         $sample = ($pMatch.Groups[1].Value -replace '<.*?>',' ' -replace '\s+',' ').Trim()
