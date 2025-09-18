@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap');
+
 :root {
   --black: #000000;
   --silver: #cfcfcf; /* light silver background */
@@ -11,6 +13,28 @@ body {
   background: var(--silver);
   color: var(--black);
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Brand lockup: logo + wordmark */
+.brand-name {
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 800;
+  line-height: 1;
+  /* Approximately 2x typical header text size; responsive clamp for safety */
+  font-size: clamp(1.75rem, 4.5vw, 2.5rem);
+  color: var(--black);
+}
+
+/* If header has dark background from theme overrides, ensure contrast */
+header .brand-name { color: var(--silver); }
+
+.brand-logo {
+  height: 44px; /* match visual cap height of the brand-name at common viewports */
+  width: auto;
+}
+
+@media (min-width: 1024px) {
+  .brand-logo { height: 48px; }
 }
 
 /* Headings */
