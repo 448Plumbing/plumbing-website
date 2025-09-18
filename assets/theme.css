@@ -19,21 +19,15 @@ body {
 /* Brand lockup: logo + wordmark */
 .brand-name {
   font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  /* Option B: mostly black with a very subtle gold sheen at the far left/right */
-  background: linear-gradient(
-    90deg,
-    var(--gold) 0%,     /* subtle left edge */
-    var(--gold) 2%,
-    #141414 6%,         /* near-black for contrast against pure black header */
-    #1b1b1b 50%,
-    #141414 94%,
-    var(--gold) 98%,    /* subtle right edge */
-    var(--gold) 100%
-  );
+  font-weight: 800;
+  line-height: 1;
+  /* ~2x typical header size, responsive */
+  font-size: clamp(1.75rem, 4.5vw, 2.5rem);
+  color: #ffffff; /* base white, can be overridden by variants */
+}
 
 .brand-logo {
   height: 44px; /* match visual cap height of the brand-name at common viewports */
-  -webkit-text-fill-color: transparent;
   width: auto;
 }
 
@@ -64,20 +58,35 @@ body {
 /* Black/Gold duo gradient wordmark */
 .brand-name--duo {
   color: var(--gold);
-  /* Heavier black presence with subtle gold at edges */
+  /* Option B: mostly black with a very subtle gold sheen at the far left/right */
   background: linear-gradient(
     90deg,
-    var(--gold) 0%,
-    #0f0f0f 12%,
-    #161616 20%,
-    #1a1a1a 70%,
-    var(--gold) 92%
+    var(--gold) 0%,     /* subtle left edge */
+    var(--gold) 2%,
+    #141414 6%,         /* near-black for contrast against pure black header */
+    #1b1b1b 50%,
+    #141414 94%,
+    var(--gold) 98%,    /* subtle right edge */
+    var(--gold) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent !important;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 0.6px rgba(255,255,255,0.35);
+}
+
+/* White lettering with gold (left) and black (right) side edging */
+.brand-name--edge {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff;
+  text-shadow:
+    -2px 0 0 var(--gold),
+    -1.5px 0 0 var(--gold),
+    -1px 0 0 var(--gold),
+     1px 0 0 #000,
+     1.5px 0 0 #000,
+     2px 0 0 #000;
 }
 
 /* Nav link styling: Playfair Display, black text on light pill with gold accents */
