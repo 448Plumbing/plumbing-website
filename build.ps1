@@ -27,8 +27,12 @@ foreach ($ext in $includeExtensions) {
 $files = $files | Sort-Object FullName -Unique
 Write-Log "Found $($files.Count) files to copy."
 
+$rootFull = (Get-Item $Root).FullName
 foreach ($f in $files) {
-    $rel = Resolve-Path -LiteralPath $f.FullName | ForEach-Object { $_.Path.Substring((Get-Item $Root).FullName.Length).TrimStart('\') }
+    $full = (Get-Item -LiteralPath $f.FullName).FullName
+    $rel = [System.IO.Path]::GetRelativePath($rootFull, $full)
+    # Normalize any accidental backslashes to the platform separator for consistency
+    if ([System.IO.Path]::DirectorySeparatorChar -eq '/') { $rel = ($rel -replace '\\','/') } else { $rel = ($rel -replace '/','\') }
     $dest = Join-Path -Path $Dist -ChildPath $rel
     $destDir = Split-Path -Parent $dest
     if (-not $DryRun) {
@@ -74,13 +78,27 @@ if (-not $DryRun) {
             Set-Content -LiteralPath $_.FullName -Value $txt -Force
         } catch { Write-Warning "Failed to clean HTML: $($_.FullName) - $_" }
     }
+
+    # Create directory aliases so /page/ works in addition to /page.html
+    $rootHtml = Get-ChildItem -Path $Dist -File -Filter *.html -ErrorAction SilentlyContinue | Where-Object { $_.Name -ne 'index.html' }
+    foreach ($page in $rootHtml) {
+        try {
+            $name = [System.IO.Path]::GetFileNameWithoutExtension($page.Name)
+            $aliasDir = Join-Path $Dist $name
+            if (-not (Test-Path $aliasDir)) { New-Item -ItemType Directory -Path $aliasDir | Out-Null }
+            $aliasIndex = Join-Path $aliasDir 'index.html'
+            Copy-Item -LiteralPath $page.FullName -Destination $aliasIndex -Force
+        } catch { Write-Warning "Failed to create alias for $($page.Name): $_" }
+    }
 }
 
 # Generate sitemap.xml if BaseUrl provided
 if (-not [string]::IsNullOrEmpty($BaseUrl) -and -not $DryRun) {
     Write-Log "Generating sitemap.xml with base URL: $BaseUrl"
+    $distFull = (Get-Item $Dist).FullName
     $urls = Get-ChildItem -Path $Dist -Recurse -Include '*.html','*.htm' -File | ForEach-Object {
-        $rel = $_.FullName.Substring((Get-Item $Dist).FullName.Length).TrimStart('\') -replace '\\','/'
+        $relPath = [System.IO.Path]::GetRelativePath($distFull, ($_.FullName))
+        $rel = ($relPath -replace '\\','/')
         if ($rel -eq 'index.html') { $loc = $BaseUrl.TrimEnd('/') + '/' } else { $loc = $BaseUrl.TrimEnd('/') + '/' + $rel }
         "  <url><loc>$loc</loc></url>"
     }
