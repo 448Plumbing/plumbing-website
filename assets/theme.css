@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap');
 
 :root {
   --black: #000000;
@@ -60,16 +61,48 @@ header .brand-name { color: var(--silver); }
 /* Black/Gold duo gradient wordmark */
 .brand-name--duo {
   color: var(--gold);
+  /* Heavier black presence with subtle gold at edges */
   background: linear-gradient(
     90deg,
     var(--gold) 0%,
-    #1a1a1a 45%,
-    var(--gold) 90%
+    #0f0f0f 12%,
+    #161616 20%,
+    #1a1a1a 70%,
+    var(--gold) 92%
   );
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent !important;
   -webkit-text-stroke: 0.6px rgba(255,255,255,0.35);
+}
+
+/* Nav link styling: Playfair Display, black text on light pill with gold accents */
+.site-nav {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  color: var(--black) !important;
+  background: linear-gradient(180deg, #ffffff, #f7f7f7);
+  border: 1px solid var(--gold);
+  padding: .4rem .85rem;
+  border-radius: 9999px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: .2px;
+  transition: transform .15s ease, box-shadow .15s ease, background-color .2s ease, color .2s ease;
+}
+
+header a.site-nav { color: var(--black) !important; }
+
+.site-nav:hover, .site-nav:focus {
+  background: var(--gold);
+  color: var(--black) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(212,175,55,.25);
+  outline: none;
+}
+
+.site-nav.active {
+  background: var(--gold);
+  color: var(--black) !important;
 }
 
 /* Headings */
