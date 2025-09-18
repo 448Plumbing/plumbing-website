@@ -1,6 +1,6 @@
 {
-  "RunDate": "2025-09-18 01:23:31Z",
-  "Root": "c:\\workspace\\site",
+  "RunDate": "2025-09-17 19:08:02Z",
+  "Root": ".",
   "FixMode": true,
   "DryRun": false,
   "Files": [
@@ -3830,20 +3830,6 @@
       "File": "C:\\workspace\\site\\desktop-site\\webstie building install\\Lib\\test\\test_difflib_expect.html",
       "Relative": "desktop-site/webstie building install/Lib/test/test_difflib_expect.html",
       "Issues": "",
-      "Actions": "",
-      "Changed": false
-    },
-    {
-      "File": "C:\\workspace\\site\\partials\\footer.html",
-      "Relative": "partials/footer.html",
-      "Issues": "missing-lang;missing-meta-description",
-      "Actions": "",
-      "Changed": false
-    },
-    {
-      "File": "C:\\workspace\\site\\partials\\header.html",
-      "Relative": "partials/header.html",
-      "Issues": "missing-lang;missing-meta-description",
       "Actions": "",
       "Changed": false
     },
