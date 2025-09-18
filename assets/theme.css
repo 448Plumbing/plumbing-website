@@ -51,10 +51,25 @@ header .brand-name { color: var(--silver); }
   );
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
+  color: transparent !important;
   /* Subtle stroke to keep black segments legible on dark header */
   -webkit-text-stroke: 0.6px rgba(255,255,255,0.35);
   text-shadow: 0 0 0 rgba(0,0,0,0); /* ensures consistent subpixel rendering */
+}
+
+/* Black/Gold duo gradient wordmark */
+.brand-name--duo {
+  color: var(--gold);
+  background: linear-gradient(
+    90deg,
+    var(--gold) 0%,
+    #1a1a1a 45%,
+    var(--gold) 90%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent !important;
+  -webkit-text-stroke: 0.6px rgba(255,255,255,0.35);
 }
 
 /* Headings */
