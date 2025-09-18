@@ -1,0 +1,87 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+# Required permissions for the official Pages actions
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build static site into dist
+        shell: pwsh
+        run: |
+          ./scripts/build-static.ps1 -Root "$PWD" -Domain "www.448Plumbing.com"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  set-domain:
+    # Best-effort post-deploy configuration to set custom domain and try HTTPS enforcement.
+    # This does not fail the workflow if the API is not available or not yet ready.
+    needs: deploy
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+    steps:
+      - name: Set custom domain via API (best-effort)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          DOMAIN: www.448Plumbing.com
+        run: |
+          set -e
+          echo "Attempting to set custom domain to $DOMAIN"
+          curl -fsS -X PUT \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/$REPO/pages \
+            -d "{\"cname\":\"$DOMAIN\"}" || true
+
+      - name: Try to enforce HTTPS when ready (best-effort)
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          echo "Polling Pages status and attempting to enforce HTTPS if supported..."
+          for i in {1..10}; do
+            curl -fsS -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+              https://api.github.com/repos/$REPO/pages | tee /tmp/pages.json || true
+            # Try PATCH to enforce HTTPS if endpoint supports it
+            curl -fsS -X PATCH \
+              -H "Authorization: Bearer $GH_TOKEN" \
+              -H "Accept: application/vnd.github+json" \
+              https://api.github.com/repos/$REPO/pages \
+              -d '{"https_enforced":true}' && break || true
+            sleep 15
+          done

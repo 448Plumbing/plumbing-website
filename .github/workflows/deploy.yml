@@ -1,8 +1,7 @@
-name: Optimize, Build and Deploy to GitHub Pages
+name: Optimize, Build and Deploy to GitHub Pages (deprecated)
 
 on:
-  push:
-    branches: [ main ]
+  # Manual trigger only; superseded by deploy-pages.yml using official Pages actions
   workflow_dispatch: {}
 
 jobs:
