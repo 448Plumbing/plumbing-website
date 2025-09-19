@@ -78,8 +78,8 @@ body {
 
 /* White lettering with gold (left) and black (right) side edging */
 .brand-name--edge {
-  color: #ffffff !important;
-  -webkit-text-fill-color: #ffffff;
+  color: #000000 !important;
+  -webkit-text-fill-color: #000000;
   text-shadow:
     -2px 0 0 var(--gold),
     -1.5px 0 0 var(--gold),
