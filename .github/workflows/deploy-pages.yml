@@ -25,10 +25,10 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
-      - name: Build static site into dist
+      - name: Optimize, audit, and build site into dist
         shell: pwsh
         run: |
-          ./scripts/build-static.ps1 -Root "$PWD" -Domain "www.448Plumbing.com"
+          ./optimize-and-build.ps1 -Root "$PWD" -BaseUrl "https://www.448plumbing.com" -FailOnError
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

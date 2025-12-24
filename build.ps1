@@ -13,6 +13,16 @@ if (-not (Test-Path $Root)) { Write-Error "Root path not found: $Root"; exit 1 }
 
 if ($DryRun) { Write-Log "DryRun enabled - no files will be changed. Use -DryRun:$false to perform the build." }
 
+# Normalize BaseUrl to ensure consistent lowercase domain and no trailing slash
+if (-not [string]::IsNullOrEmpty($BaseUrl)) {
+    try {
+        $uri = [Uri]$BaseUrl
+        $BaseUrl = ($uri.Scheme + '://' + $uri.Host.ToLowerInvariant()).TrimEnd('/')
+    } catch {
+        $BaseUrl = $BaseUrl.TrimEnd('/')
+    }
+}
+
 # Create dist folder
 if (Test-Path $Dist) { Remove-Item -Recurse -Force -ErrorAction SilentlyContinue $Dist }
 if (-not $DryRun) { New-Item -ItemType Directory -Path $Dist | Out-Null }
@@ -25,7 +35,15 @@ foreach ($ext in $includeExtensions) {
     $files += Get-ChildItem -Path $Root -Recurse -Include $ext -File -ErrorAction SilentlyContinue
 }
 $files = $files | Sort-Object FullName -Unique
-Write-Log "Found $($files.Count) files to copy."
+Write-Log "Found $($files.Count) files to copy before filtering."
+
+# Exclude dev-only desktop-site docs from the build output
+$rootItem = Get-Item $Root
+$files = $files | Where-Object {
+    $relPath = $_.FullName.Substring($rootItem.FullName.Length).TrimStart('\\') -replace '\\','/'
+    -not $relPath.StartsWith('desktop-site/')
+}
+Write-Log "After excluding /desktop-site, $($files.Count) files remain."
 
 foreach ($f in $files) {
     $rel = Resolve-Path -LiteralPath $f.FullName | ForEach-Object { $_.Path.Substring((Get-Item $Root).FullName.Length).TrimStart('\') }
@@ -34,6 +52,19 @@ foreach ($f in $files) {
     if (-not $DryRun) {
         if (-not (Test-Path $destDir)) { New-Item -ItemType Directory -Path $destDir -Force | Out-Null }
         Copy-Item -LiteralPath $f.FullName -Destination $dest -Force
+    }
+}
+
+# Ensure CNAME is written based on BaseUrl host when available
+if (-not $DryRun -and -not [string]::IsNullOrEmpty($BaseUrl)) {
+    try {
+        $uri = [Uri]$BaseUrl
+        $domain = $uri.Host.ToLowerInvariant()
+        $cnamePath = Join-Path $Dist 'CNAME'
+        Set-Content -LiteralPath $cnamePath -Value $domain -Encoding ASCII
+        Write-Log "Wrote CNAME => $domain"
+    } catch {
+        Write-Warning "Failed to derive CNAME from BaseUrl '$BaseUrl': $_"
     }
 }
 
@@ -81,9 +112,11 @@ if (-not [string]::IsNullOrEmpty($BaseUrl) -and -not $DryRun) {
     Write-Log "Generating sitemap.xml with base URL: $BaseUrl"
     $urls = Get-ChildItem -Path $Dist -Recurse -Include '*.html','*.htm' -File | ForEach-Object {
         $rel = $_.FullName.Substring((Get-Item $Dist).FullName.Length).TrimStart('\') -replace '\\','/'
+        if ($rel -like 'desktop-site/*') { return }
         if ($rel -eq 'index.html') { $loc = $BaseUrl.TrimEnd('/') + '/' } else { $loc = $BaseUrl.TrimEnd('/') + '/' + $rel }
         "  <url><loc>$loc</loc></url>"
     }
+    $urls = $urls | Where-Object { $_ }
     $sitemapPath = Join-Path -Path $Dist -ChildPath 'sitemap.xml'
     $body = $urls -join "`n"
     $sitemap = @"
@@ -97,7 +130,11 @@ $body
 
 # Write robots.txt
 if (-not $DryRun) {
-    $robots = "User-agent: *`nAllow: /`nSitemap: " + ([string]::IsNullOrEmpty($BaseUrl) ? '' : ($BaseUrl.TrimEnd('/') + '/sitemap.xml'))
+    $lines = @("User-agent: *","Allow: /","Disallow: /desktop-site/")
+    if (-not [string]::IsNullOrEmpty($BaseUrl)) {
+        $lines += "Sitemap: $($BaseUrl.TrimEnd('/'))/sitemap.xml"
+    }
+    $robots = $lines -join "`n"
     Set-Content -LiteralPath (Join-Path $Dist 'robots.txt') -Value $robots -Force
 }
 

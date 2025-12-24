@@ -13,7 +13,7 @@ function Copy-Static {
   New-Item -ItemType Directory -Force -Path $Dst | Out-Null
 
   $exclude = @(
-    '.git', '.github', 'node_modules', 'dist', 'AuditBackup', 'SEOBackup', 'scripts/verify-dns.ps1'
+    '.git', '.github', 'node_modules', 'dist', 'AuditBackup', 'SEOBackup', 'desktop-site', 'scripts/verify-dns.ps1'
   )
 
   $files = Get-ChildItem -Path $Src -Recurse -File
