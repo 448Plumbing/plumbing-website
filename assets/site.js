@@ -1,7 +1,7 @@
 // Global maintenance mode configuration
 // Toggle this to enable/disable the maintenance gate.
 window.SITE_MAINTENANCE = true; // Set to false to turn maintenance mode OFF
-window.SITE_MAINTENANCE_KEY = '448'; // Query-string key for bypass: ?key=448
+window.SITE_MAINTENANCE_KEY = '448m12040'; // Query-string key for bypass: ?key=448m12040
 
 // Simple maintenance-mode gate with query-string + cookie bypass
 (function () {
@@ -26,7 +26,7 @@ window.SITE_MAINTENANCE_KEY = '448'; // Query-string key for bypass: ?key=448
     if (isAlwaysAllowed) return;
 
     const params = new URLSearchParams(window.location.search || '');
-    const expectedKey = String(window.SITE_MAINTENANCE_KEY || '448');
+    const expectedKey = String(window.SITE_MAINTENANCE_KEY || '448m12040');
     const providedKey = params.get('key');
 
     function hasBypassCookie() {
