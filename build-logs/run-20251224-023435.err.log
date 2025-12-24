@@ -1,0 +1,8 @@
+[31;1mInvoke-Step: [0mC:\Users\Maitray\Desktop\448Plumbing\448 Plumbing website\optimize-and-build.ps1:37:5[0m
+[31;1m[0m[36;1mLine |[0m
+[31;1m[0m[36;1m[36;1m  37 | [0m     [36;1mInvoke-Step "Encoding cleanup" { & $encScript -Root $Root -DryRun[0m .[0m
+[31;1m[0m[36;1m[36;1m[0m[36;1m[0m[36;1m     | [31;1m     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[31;1m[0m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m     | [31;1mStep 'Encoding cleanup' failed: At C:\Users\Maitray\Desktop\448Plumbing\448 Plumbing[0m
+[31;1m[0m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1m[36;1m     | [31;1mwebsite\encoding-cleanup.ps1:49 char:84 + . t = $head -replace "<head>", "<head>`r`n[0m
+[31;1m[0m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1m[36;1m[31;1m[36;1m     | [31;1m<meta charset=\"UTF-8\">" +                                                         [0m
+[31;1m[0m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1m[36;1m[31;1m[36;1m[31;1m[36;1m     | [31;1m~~~~~~~~~ Unexpected token 'UTF-8\">"' in expression or statement.[0m

@@ -1,7 +1,239 @@
 {
-  "RunDate": "2025-12-24 01:25:28Z",
+  "RunDate": "2025-12-24 08:48:50Z",
   "Root": ".",
   "BaseUrl": "https://www.448plumbing.com/",
   "DryRun": false,
-  "Pages": []
+  "Pages": [
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\blog\\leak-checklist.html",
+      "Relative": "blog/leak-checklist.html",
+      "Url": "https://www.448plumbing.com/blog/leak-checklist.html",
+      "Title": "A Quick Home Leak Checklist | 448 Plumbing",
+      "Description": "Use this simple leak checklist from 448 Plumbing to spot hidden plumbing issues early and protect your Dallas–Fort Worth home."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\blog\\prevent-drain-clogs.html",
+      "Relative": "blog/prevent-drain-clogs.html",
+      "Url": "https://www.448plumbing.com/blog/prevent-drain-clogs.html",
+      "Title": "How to Prevent Common Drain Clogs | 448 Plumbing",
+      "Description": "Simple, practical tips from 448 Plumbing to prevent common kitchen, bathroom, and floor drain clogs in your Dallas–Fort Worth home."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\blog\\water-heater-lifespan.html",
+      "Relative": "blog/water-heater-lifespan.html",
+      "Url": "https://www.448plumbing.com/blog/water-heater-lifespan.html",
+      "Title": "Signs Your Water Heater Needs Attention | 448 Plumbing",
+      "Description": "Learn the most common signs your water heater needs repair or replacement from the licensed plumbers at 448 Plumbing in Dallas–Fort Worth."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\partials\\footer.html",
+      "Relative": "partials/footer.html",
+      "Url": "https://www.448plumbing.com/partials/footer.html",
+      "Title": null,
+      "Description": null
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\partials\\header.html",
+      "Relative": "partials/header.html",
+      "Url": "https://www.448plumbing.com/partials/header.html",
+      "Title": null,
+      "Description": null
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\about.html",
+      "Relative": "about.html",
+      "Url": "https://www.448plumbing.com/about.html",
+      "Title": "About Us — 448 Plumbing",
+      "Description": "Learn about 448 Plumbing — quick, friendly, and reliable plumbing services in Dallas / Fort Worth. Quality work at a fair price."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\areas.html",
+      "Relative": "areas.html",
+      "Url": "https://www.448plumbing.com/areas.html",
+      "Title": "Service Areas — 448 Plumbing | Dallas & DFW Plumbing Services",
+      "Description": "448 Plumbing proudly serves Dallas, Fort Worth, Arlington, Plano and surrounding neighborhoods with emergency plumbing, drain cleaning, water heater repair, and commercial plumbing. Licensed plumbers near you."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\blog.html",
+      "Relative": "blog.html",
+      "Url": "https://www.448plumbing.com/blog.html",
+      "Title": "Tips & Insights — 448 Plumbing",
+      "Description": "Plumbing tips and insights from 448 Plumbing to keep your home running smoothly."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\commercial-plumbing.html",
+      "Relative": "commercial-plumbing.html",
+      "Url": "https://www.448plumbing.com/commercial-plumbing.html",
+      "Title": "Commercial Plumbing in Dallas & DFW | 448 Plumbing",
+      "Description": "Restaurants, offices, and small businesses in Dallas & DFW rely on 448 Plumbing for commercial plumbing, maintenance, and emergency response."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\contact.html",
+      "Relative": "contact.html",
+      "Url": "https://www.448plumbing.com/contact.html",
+      "Title": "Contact — 448 Plumbing",
+      "Description": "Contact 448 Plumbing for fast, friendly plumbing service in Dallas–Fort Worth."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\drain-cleaning.html",
+      "Relative": "drain-cleaning.html",
+      "Url": "https://www.448plumbing.com/drain-cleaning.html",
+      "Title": "Professional Drain Cleaning in Dallas & DFW | 448 Plumbing",
+      "Description": "Clogged or slow drains in Dallas or the DFW area? 448 Plumbing provides professional drain cleaning, hydro-jetting, and camera inspections to keep your lines clear."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\emergency-plumbing.html",
+      "Relative": "emergency-plumbing.html",
+      "Url": "https://www.448plumbing.com/emergency-plumbing.html",
+      "Title": "Emergency Plumbing in Dallas & DFW — 24/7 Service | 448 Plumbing",
+      "Description": "Need an emergency plumber in Dallas or the DFW area? 448 Plumbing offers 24/7 emergency plumbing for burst pipes, backups, and major leaks with fast response and upfront pricing."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\index.html",
+      "Relative": "index.html",
+      "Url": "https://www.448plumbing.com/",
+      "Title": "448 Plumbing — Dallas / Fort Worth Emergency Plumbing & Repair",
+      "Description": "448 Plumbing provides 24/7 emergency plumbing, drain cleaning, water heater repair, and leak detection across Dallas–Fort Worth."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\leak-detection.html",
+      "Relative": "leak-detection.html",
+      "Url": "https://www.448plumbing.com/leak-detection.html",
+      "Title": "Leak Detection & Slab Leak Repair in Dallas & DFW | 448 Plumbing",
+      "Description": "Wet spots, higher water bills, or foundation cracks? 448 Plumbing provides electronic leak detection and slab leak repair in Dallas and the DFW area."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\maintenance.html",
+      "Relative": "maintenance.html",
+      "Url": "https://www.448plumbing.com/maintenance.html",
+      "Title": "Scheduled Maintenance - 448 Plumbing",
+      "Description": "We're performing scheduled maintenance on the 448 Plumbing website. For urgent plumbing needs, call 214-718-6990."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\plumbing-services-allen-tx.html",
+      "Relative": "plumbing-services-allen-tx.html",
+      "Url": "https://www.448plumbing.com/plumbing-services-allen-tx.html",
+      "Title": "Plumber in Allen, TX — Local Plumbing Services | 448 Plumbing",
+      "Description": "Searching for a plumber in Allen, TX? 448 Plumbing offers emergency plumbing, drain cleaning, water heater service, and leak detection."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\plumbing-services-carrollton-tx.html",
+      "Relative": "plumbing-services-carrollton-tx.html",
+      "Url": "https://www.448plumbing.com/plumbing-services-carrollton-tx.html",
+      "Title": "Plumber in Carrollton, TX — Local Plumbing Services | 448 Plumbing",
+      "Description": "Need a plumber in Carrollton, TX? 448 Plumbing offers emergency plumbing, drain cleaning, water heater service, and leak detection for Carrollton homes."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\plumbing-services-dallas-tx.html",
+      "Relative": "plumbing-services-dallas-tx.html",
+      "Url": "https://www.448plumbing.com/plumbing-services-dallas-tx.html",
+      "Title": "Plumber in Dallas, TX — Local Emergency & Same-Day Service | 448 Plumbing",
+      "Description": "Need a trusted plumber in Dallas, TX? 448 Plumbing provides emergency plumbing, drain cleaning, water heater repair, and leak detection with fast response and upfront pricing."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\plumbing-services-garland-tx.html",
+      "Relative": "plumbing-services-garland-tx.html",
+      "Url": "https://www.448plumbing.com/plumbing-services-garland-tx.html",
+      "Title": "Plumber in Garland, TX — Local Plumbing Services | 448 Plumbing",
+      "Description": "Looking for a plumber in Garland, TX? 448 Plumbing provides emergency plumbing, drain cleaning, water heater service, and leak detection for Garland homes."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\plumbing-services-irving-tx.html",
+      "Relative": "plumbing-services-irving-tx.html",
+      "Url": "https://www.448plumbing.com/plumbing-services-irving-tx.html",
+      "Title": "Plumber in Irving, TX — Local Plumbing Services | 448 Plumbing",
+      "Description": "Need a plumber in Irving, TX? 448 Plumbing offers emergency plumbing, drain cleaning, water heater service, and leak detection for Irving homes."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\plumbing-services-mckinney-tx.html",
+      "Relative": "plumbing-services-mckinney-tx.html",
+      "Url": "https://www.448plumbing.com/plumbing-services-mckinney-tx.html",
+      "Title": "Plumber in McKinney, TX — Local Plumbing Services | 448 Plumbing",
+      "Description": "Need a McKinney plumber? 448 Plumbing provides emergency plumbing, drain cleaning, water heater services, and leak detection for McKinney, TX homes."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\plumbing-services-plano-tx.html",
+      "Relative": "plumbing-services-plano-tx.html",
+      "Url": "https://www.448plumbing.com/plumbing-services-plano-tx.html",
+      "Title": "Plumber in Plano, TX — Local Plumbing Services | 448 Plumbing",
+      "Description": "Looking for a plumber in Plano, TX? 448 Plumbing provides emergency plumbing, drain cleaning, water heater service, and leak detection with clear pricing."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\plumbing-services-richardson-tx.html",
+      "Relative": "plumbing-services-richardson-tx.html",
+      "Url": "https://www.448plumbing.com/plumbing-services-richardson-tx.html",
+      "Title": "Plumber in Richardson, TX — Local Plumbing Services | 448 Plumbing",
+      "Description": "Need a plumber in Richardson, TX? 448 Plumbing offers emergency plumbing, drain cleaning, water heater service, and leak detection for Richardson homes."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\plumbing-services-the-colony-tx.html",
+      "Relative": "plumbing-services-the-colony-tx.html",
+      "Url": "https://www.448plumbing.com/plumbing-services-the-colony-tx.html",
+      "Title": "Plumber in The Colony, TX — Local Plumbing Services | 448 Plumbing",
+      "Description": "Need a plumber in The Colony, TX? 448 Plumbing provides emergency plumbing, drain cleaning, water heater service, and leak detection for The Colony homes."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\privacy.html",
+      "Relative": "privacy.html",
+      "Url": "https://www.448plumbing.com/privacy.html",
+      "Title": "Privacy Policy — 448 Plumbing",
+      "Description": "Local professional plumbing services in the Dallas–Fort Worth area."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\services.html",
+      "Relative": "services.html",
+      "Url": "https://www.448plumbing.com/services.html",
+      "Title": "Plumbing Services — 448 Plumbing | Dallas, TX — Emergency & Same-Day Service",
+      "Description": "448 Plumbing provides emergency plumbing, drain cleaning, water heater repair & installation, leak detection, sewer line repair, and commercial plumbing in Dallas and the DFW area. 24/7 same-day service from licensed plumbers near you."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\sewer-line-repair.html",
+      "Relative": "sewer-line-repair.html",
+      "Url": "https://www.448plumbing.com/sewer-line-repair.html",
+      "Title": "Sewer Line Repair in Dallas & DFW | 448 Plumbing",
+      "Description": "Sewer backups, root intrusion, or collapsed lines in Dallas or the DFW area? 448 Plumbing provides sewer line inspection, cleaning, and repair."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\sitemap.html",
+      "Relative": "sitemap.html",
+      "Url": "https://www.448plumbing.com/sitemap.html",
+      "Title": "Sitemap — 448 Plumbing",
+      "Description": "Local professional plumbing services in the Dallas–Fort Worth area."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\team.html",
+      "Relative": "team.html",
+      "Url": "https://www.448plumbing.com/team.html",
+      "Title": "Meet Our Team — 448 Plumbing",
+      "Description": "Meet the licensed and insured plumbing professionals at 448 Plumbing — Maitray, Ro, Michael Grubbs, and Dylan. Trusted service across Dallas–Fort Worth."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\terms.html",
+      "Relative": "terms.html",
+      "Url": "https://www.448plumbing.com/terms.html",
+      "Title": "Terms of Service — 448 Plumbing",
+      "Description": "Local professional plumbing services in the Dallas–Fort Worth area."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\thanks.html",
+      "Relative": "thanks.html",
+      "Url": "https://www.448plumbing.com/thanks.html",
+      "Title": "Thanks for Contacting Us — 448 Plumbing",
+      "Description": "Thanks for contacting 448 Plumbing. We've received your message and will follow up shortly."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\water-heater-installation.html",
+      "Relative": "water-heater-installation.html",
+      "Url": "https://www.448plumbing.com/water-heater-installation.html",
+      "Title": "Water Heater Installation in Dallas & DFW | 448 Plumbing",
+      "Description": "Need a new water heater in Dallas or the DFW area? 448 Plumbing installs gas, electric, and tankless water heaters with code-compliant, clean workmanship."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\water-heater-repair.html",
+      "Relative": "water-heater-repair.html",
+      "Url": "https://www.448plumbing.com/water-heater-repair.html",
+      "Title": "Water Heater Repair in Dallas & DFW | 448 Plumbing",
+      "Description": "No hot water or a leaking water heater in Dallas or the DFW area? 448 Plumbing provides fast, honest water heater repair for gas, electric, and tankless systems."
+    }
+  ]
 }

@@ -1,0 +1,9 @@
+[optimize-and-build] Root: C:\Users\Maitray\Desktop\448Plumbing\448 Plumbing website
+[optimize-and-build] BaseUrl: https://www.448plumbing.com
+[optimize-and-build] Starting: Encoding cleanup
+[encoding-cleanup] Root: C:\Users\Maitray\Desktop\448Plumbing\448 Plumbing website
+[encoding-cleanup] Scanning 33 HTML files...
+[encoding-cleanup] Cleaning: C:\Users\Maitray\Desktop\448Plumbing\448 Plumbing website\index.html
+[encoding-cleanup] Done. Changed 1 file(s).
+[optimize-and-build] Completed: Encoding cleanup
+[optimize-and-build] Starting: SEO enhancement

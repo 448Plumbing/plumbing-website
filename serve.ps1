@@ -1,146 +1,95 @@
 param(
-    [string]$Root = "C:\Users\Maitray\Desktop\448Plumbing\448 Plumbing website",
+    [string]$Root = ".",
     [int]$Port = 8000
 )
 
-Write-Host "Serving folder: $Root on http://localhost:$Port/ (Ctrl+C to stop)"
+$ErrorActionPreference = "Stop"
+
+$rootPath = (Resolve-Path $Root).Path
+$rootPath = $rootPath.TrimEnd('\','/')
+
+Write-Host "[serve] Serving folder: $rootPath on http://localhost:$Port/ (Ctrl+C to stop)"
 
 Add-Type -AssemblyName System.Net.HttpListener
-$prefix = "http://localhost:$Port/"
 $listener = New-Object System.Net.HttpListener
+$prefix = "http://localhost:$Port/"
 $listener.Prefixes.Add($prefix)
+$listener.Start()
+
+# Simple content-type map
+$contentTypes = @{
+    ".html" = "text/html; charset=utf-8"
+    ".htm"  = "text/html; charset=utf-8"
+    ".css"  = "text/css; charset=utf-8"
+    ".js"   = "application/javascript; charset=utf-8"
+    ".png"  = "image/png"
+    ".jpg"  = "image/jpeg"
+    ".jpeg" = "image/jpeg"
+    ".gif"  = "image/gif"
+    ".svg"  = "image/svg+xml"
+    ".ico"  = "image/x-icon"
+    ".json" = "application/json; charset=utf-8"
+    ".xml"  = "application/xml; charset=utf-8"
+    ".txt"  = "text/plain; charset=utf-8"
+}
+
 try {
-    $listener.Start()
-} catch {
-    Write-Error "Failed to start listener on $prefix. Try using a different port or run PowerShell as Administrator. $_"
-    exit 1
-}
-
-function Get-ContentType($path) {
-    switch -regex ([System.IO.Path]::GetExtension($path).ToLower()) {
-        "\.html$" { 'text/html; charset=utf-8'; break }
-        "\.htm$"  { 'text/html; charset=utf-8'; break }
-        "\.css$"  { 'text/css'; break }
-        "\.js$"   { 'application/javascript'; break }
-        "\.json$" { 'application/json'; break }
-        "\.png$"  { 'image/png'; break }
-        "\.jpg$"  { 'image/jpeg'; break }
-        "\.jpeg$" { 'image/jpeg'; break }
-        "\.gif$"  { 'image/gif'; break }
-        "\.svg$"  { 'image/svg+xml'; break }
-        "\.webp$" { 'image/webp'; break }
-        default { 'application/octet-stream' }
-    }
-}
-
-while ($listener.IsListening) {
-    try {
+    while ($listener.IsListening) {
         $context = $listener.GetContext()
         $request = $context.Request
-        $localPath = $request.Url.LocalPath.TrimStart('/')
-        if ([string]::IsNullOrEmpty($localPath)) {
-            $localPath = 'index.html'
-        }
-        # Map URL path to file path under Root
-        $filePath = Join-Path -Path $Root -ChildPath $localPath
+        $response = $context.Response
 
-        # If the exact path does not exist, attempt friendly fallbacks:
-        # 1. If request path (w/o trailing slash) corresponds to a directory, serve its index.html
-        # 2. If path ends with .html but that is actually a directory name ( like services.html/ ), look inside it for index.html
-        # 3. If extensionless path requested (e.g. /services or /services/), try services/index.html OR services.html/index.html
-        # 4. If user requested something.html and file doesn't exist but a directory something.html\index.html exists, serve that
-
-        function Resolve-FriendlyPath([string]$root, [string]$requested, [string]$fullCandidate) {
-            # Returns a tuple-like hashtable @{ Path = <resolved or $null>; Reason = <string> }
-            if (Test-Path $fullCandidate -PathType Leaf) {
-                return @{ Path = $fullCandidate; Reason = 'exact match' }
-            }
-            $baseNoSlash = $requested.TrimEnd('/')
-            $candidateDir = Join-Path $root $baseNoSlash
-            # Case: directory exists (with or without trailing slash) containing index.html
-            if (Test-Path $candidateDir -PathType Container) {
-                $indexFile = Join-Path $candidateDir 'index.html'
-                if (Test-Path $indexFile -PathType Leaf) {
-                    return @{ Path = $indexFile; Reason = 'directory index' }
-                }
-            }
-            # Case: requested ends with .html but is actually a directory name containing index.html
-            if ($baseNoSlash.EndsWith('.html', [System.StringComparison]::OrdinalIgnoreCase)) {
-                $dirLike = Join-Path $root $baseNoSlash
-                if (Test-Path $dirLike -PathType Container) {
-                    $indexInside = Join-Path $dirLike 'index.html'
-                    if (Test-Path $indexInside -PathType Leaf) { return @{ Path = $indexInside; Reason = 'html-named directory index' } }
-                }
-            } else {
-                # Extensionless: try path/index.html
-                $extlessDir = Join-Path $root $baseNoSlash
-                if (Test-Path $extlessDir -PathType Container) {
-                    $extlessIndex = Join-Path $extlessDir 'index.html'
-                    if (Test-Path $extlessIndex -PathType Leaf) { return @{ Path = $extlessIndex; Reason = 'extensionless directory index' } }
-                }
-                # Try adding .html then looking for directory .html/index.html (our site pattern)
-                $htmlDir = Join-Path $root ($baseNoSlash + '.html')
-                if (Test-Path $htmlDir -PathType Container) {
-                    $htmlDirIndex = Join-Path $htmlDir 'index.html'
-                    if (Test-Path $htmlDirIndex -PathType Leaf) { return @{ Path = $htmlDirIndex; Reason = 'implied .html directory index' } }
-                }
-                # Try adding .html file directly
-                $htmlFile = Join-Path $root ($baseNoSlash + '.html')
-                if (Test-Path $htmlFile -PathType Leaf) { return @{ Path = $htmlFile; Reason = 'implicit .html file' } }
-            }
-            return @{ Path = $null; Reason = 'unresolved' }
+        $path = $request.Url.AbsolutePath
+        if ([string]::IsNullOrEmpty($path) -or $path -eq "/") {
+            $relPath = "index.html"
+        } else {
+            $relPath = $path.TrimStart('/')
         }
 
-        $resolved = Resolve-FriendlyPath -root $Root -requested $localPath -fullCandidate $filePath
-        if ($resolved.Path) {
-            $filePath = $resolved.Path
-            # Optional verbose logging for debugging
-            Write-Host "[200] $($request.HttpMethod) $($request.RawUrl) -> $filePath ($($resolved.Reason))"
-        }
-        # Prevent directory traversal
-        $fullRoot = [System.IO.Path]::GetFullPath($Root)
-        $fullFile = $null
-        try { $fullFile = [System.IO.Path]::GetFullPath($filePath) } catch { $fullFile = $null }
-        if (-not $fullFile -or -not $fullFile.StartsWith($fullRoot, [System.StringComparison]::OrdinalIgnoreCase)) {
-            $context.Response.StatusCode = 403
-            $buffer = [System.Text.Encoding]::UTF8.GetBytes('403 Forbidden')
-            $context.Response.OutputStream.Write($buffer,0,$buffer.Length)
-            $context.Response.Close()
-            continue
-        }
-        if (-not (Test-Path $fullFile -PathType Leaf)) {
-            # Final attempt: if path without trailing slash is a directory containing index.html
-            $maybeDir = $filePath.TrimEnd('/','\\')
-            if (Test-Path $maybeDir -PathType Container) {
-                $maybeIndex = Join-Path $maybeDir 'index.html'
-                if (Test-Path $maybeIndex -PathType Leaf) {
-                    $fullFile = [System.IO.Path]::GetFullPath($maybeIndex)
-                }
-            }
-            if (-not (Test-Path $fullFile -PathType Leaf)) {
-                Write-Host "[404] $($request.HttpMethod) $($request.RawUrl)"
-                $context.Response.StatusCode = 404
-                $buf = [System.Text.Encoding]::UTF8.GetBytes('404 Not Found')
-                $context.Response.OutputStream.Write($buf,0,$buf.Length)
-                $context.Response.Close()
-                continue
+        $filePath = Join-Path $rootPath $relPath
+        if (-not (Test-Path $filePath)) {
+            # Try directory index
+            if (-not $relPath.EndsWith(".html") -and -not $relPath.EndsWith(".htm")) {
+                $filePath = Join-Path $filePath "index.html"
             }
         }
 
-        $bytes = [System.IO.File]::ReadAllBytes($fullFile)
-        $contentType = Get-ContentType $fullFile
-        $context.Response.ContentType = $contentType
-        $context.Response.ContentLength64 = $bytes.Length
-        $context.Response.OutputStream.Write($bytes, 0, $bytes.Length)
-        $context.Response.OutputStream.Close()
-    } catch [System.Net.HttpListenerException] {
-        # Listener stopped or interrupted
-        break
-    } catch {
-        Write-Warning "Server error: $_"
+        $statusCode = 200
+        if (-not (Test-Path $filePath)) {
+            $statusCode = 404
+            $bytes = [System.Text.Encoding]::UTF8.GetBytes("Not Found")
+            $response.StatusCode = 404
+            $response.ContentType = "text/plain; charset=utf-8"
+            $response.OutputStream.Write($bytes, 0, $bytes.Length)
+            Write-Host "[404] GET $path -> $filePath (missing)"
+        } else {
+            try {
+                $ext = [System.IO.Path]::GetExtension($filePath).ToLowerInvariant()
+                $ctype = $contentTypes[$ext]
+                if (-not $ctype) { $ctype = "application/octet-stream" }
+
+                $buffer = [System.IO.File]::ReadAllBytes($filePath)
+                $response.StatusCode = 200
+                $response.ContentType = $ctype
+                $response.ContentLength64 = $buffer.LongLength
+                $response.OutputStream.Write($buffer, 0, $buffer.Length)
+                Write-Host "[200] GET $path -> $filePath (exact match)"
+            } catch {
+                $statusCode = 500
+                $bytes = [System.Text.Encoding]::UTF8.GetBytes("Internal Server Error")
+                $response.StatusCode = 500
+                $response.ContentType = "text/plain; charset=utf-8"
+                $response.OutputStream.Write($bytes, 0, $bytes.Length)
+                Write-Warning "[500] GET $path -> $filePath error: $_"
+            }
+        }
+
+        $response.OutputStream.Flush()
+        $response.Close()
+    }
+} finally {
+    if ($listener -ne $null) {
+        $listener.Stop()
+        $listener.Close()
     }
 }
-
-$listener.Stop()
-$listener.Close()
-Write-Host "Server stopped."

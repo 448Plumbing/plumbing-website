@@ -46,7 +46,7 @@ $files = $files | Where-Object {
 Write-Log "After excluding /desktop-site, $($files.Count) files remain."
 
 foreach ($f in $files) {
-    $rel = Resolve-Path -LiteralPath $f.FullName | ForEach-Object { $_.Path.Substring((Get-Item $Root).FullName.Length).TrimStart('\') }
+    $rel = Resolve-Path -LiteralPath $f.FullName | ForEach-Object { $_.Path.Substring((Get-Item $Root).FullName.Length).TrimStart('\\') }
     $dest = Join-Path -Path $Dist -ChildPath $rel
     $destDir = Split-Path -Parent $dest
     if (-not $DryRun) {
@@ -86,7 +86,7 @@ if (-not $DryRun) {
             $txt = Get-Content -Raw -LiteralPath $_.FullName
             # remove /* */ comments and // comments
             $txt = [regex]::Replace($txt, '/\*.*?\*/', '', [System.Text.RegularExpressions.RegexOptions]::Singleline)
-            $txt = [regex]::Replace($txt, '//.*?$','', [System.Text.RegularExpressions.RegexOptions]::Multiline)
+            $txt = [regex]::Replace($txt, '//.*?$', '', [System.Text.RegularExpressions.RegexOptions]::Multiline)
             $txt = [regex]::Replace($txt, '\s+', ' ')
             Set-Content -LiteralPath $_.FullName -Value $txt -Force
         } catch { Write-Warning "Failed to minify JS: $($_.FullName) - $_" }
@@ -111,7 +111,7 @@ if (-not $DryRun) {
 if (-not [string]::IsNullOrEmpty($BaseUrl) -and -not $DryRun) {
     Write-Log "Generating sitemap.xml with base URL: $BaseUrl"
     $urls = Get-ChildItem -Path $Dist -Recurse -Include '*.html','*.htm' -File | ForEach-Object {
-        $rel = $_.FullName.Substring((Get-Item $Dist).FullName.Length).TrimStart('\') -replace '\\','/'
+        $rel = $_.FullName.Substring((Get-Item $Dist).FullName.Length).TrimStart('\\') -replace '\\','/'
         if ($rel -like 'desktop-site/*') { return }
         if ($rel -eq 'index.html') { $loc = $BaseUrl.TrimEnd('/') + '/' } else { $loc = $BaseUrl.TrimEnd('/') + '/' + $rel }
         "  <url><loc>$loc</loc></url>"

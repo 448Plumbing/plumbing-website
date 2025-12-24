@@ -1,44 +1,55 @@
 param(
-  [string]$Root = (Resolve-Path ".").Path,
-  [string]$BaseUrl = "https://www.yoursite.com",
-  [string]$SeoRoot = $null,
-  [string]$Dist = $null,
-  [switch]$FailOnError
+    [string]$Root = ".",
+    [string]$BaseUrl = "https://www.448plumbing.com",
+    [switch]$SkipEncodingCleanup = $false,
+    [switch]$SkipSeo = $false,
+    [switch]$SkipAudit = $false,
+    [switch]$FailOnError = $true
 )
 
-Set-StrictMode -Version Latest
-$ErrorActionPreference = 'Stop'
-
-function Step($name, [scriptblock]$block) {
-  Write-Host "==> $name"
-  try {
-    & $block
-    Write-Host "✔ $name completed"
-  } catch {
-    Write-Error "Step failed: $name`n$_"
-    exit 1
-  }
-}
+$ErrorActionPreference = "Stop"
 
 $scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-if (-not $Dist) { $Dist = Join-Path $scriptDir 'dist' }
-if (-not $SeoRoot) { $SeoRoot = $Root }
 
-# 1) SEO enhance (safe no-op if structure isn't directory-per-page)
-Step "SEO enhance" {
-  & (Join-Path $scriptDir 'seo-enhance.ps1') -Root $SeoRoot -BaseUrl $BaseUrl -DryRun:$false
+function Write-Step { param($m) Write-Host "[optimize-and-build] $m" }
+
+function Invoke-Step {
+    param(
+        [string]$Name,
+        [scriptblock]$Action
+    )
+    Write-Step "Starting: $Name"
+    try {
+        & $Action
+        Write-Step "Completed: $Name"
+    } catch {
+        Write-Error "Step '$Name' failed: $_"
+        if ($FailOnError) { throw }
+    }
 }
 
-# 2) Audit and fix (GitHub-friendly output when -FailOnError)
-Step "Site audit & fix" {
-  $auditArgs = @{ Root = $Root; Fix = $true }
-  if ($FailOnError) { $auditArgs.FailOnError = $true }
-  & (Join-Path $scriptDir 'site-audit.ps1') @auditArgs
+$rootItem = Get-Item $Root
+Write-Step "Root: $($rootItem.FullName)"
+Write-Step "BaseUrl: $BaseUrl"
+
+if (-not $SkipEncodingCleanup) {
+    $encScript = Join-Path $scriptDir 'encoding-cleanup.ps1'
+    Invoke-Step "Encoding cleanup" { & $encScript -Root $Root -DryRun:$false }
 }
 
-# 3) Build to dist
-Step "Build" {
-  & (Join-Path $scriptDir 'build.ps1') -Root $Root -Dist $Dist -BaseUrl $BaseUrl -DryRun:$false
+if (-not $SkipSeo) {
+    $seoScript = Join-Path $scriptDir 'seo-enhance.ps1'
+    Invoke-Step "SEO enhancement" { & $seoScript -Root $Root -BaseUrl $BaseUrl -DryRun:$false -OutputPath "seo-report.json" }
 }
 
-Write-Host "All steps completed successfully."
+if (-not $SkipAudit) {
+    $auditScript = Join-Path $scriptDir 'site-audit.ps1'
+    Invoke-Step "Site audit" { & $auditScript -Root $Root -FixMode:$true -DryRun:$false -OutputPath "site-audit-report.json" }
+}
+
+$buildScript = Join-Path $scriptDir 'build.ps1'
+$distPath = Join-Path $Root 'dist'
+
+Invoke-Step "Build" { & $buildScript -Root $Root -Dist $distPath -DryRun:$false -BaseUrl $BaseUrl }
+
+Write-Step "All steps completed successfully."

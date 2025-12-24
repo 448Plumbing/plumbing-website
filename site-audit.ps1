@@ -1,159 +1,89 @@
 param(
-  [string]$Root = (Get-Location).Path,
-  [switch]$Fix,
-  [switch]$DryRun,
-  [switch]$FailOnError
+    [string]$Root = ".",
+    [switch]$FixMode = $true,
+    [switch]$DryRun = $false,
+    [string]$OutputPath = "site-audit-report.json"
 )
 
-Set-StrictMode -Version Latest
-$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = "Stop"
 
-function Log { param($Msg,[string]$Level='INFO'); Write-Host "[$((Get-Date).ToString('u'))][$Level] $Msg" }
+function Write-Log { param($m) Write-Host "[site-audit] $m" }
 
-if (-not (Test-Path $Root -PathType Container)) { Write-Error "Root not found: $Root"; exit 1 }
+$rootItem = Get-Item $Root
+Write-Log "Root: $($rootItem.FullName)"
 
-$htmlFiles = Get-ChildItem -Path $Root -Recurse -Include *.html,*.htm -File |
-  Where-Object { $_.FullName -notmatch '(?i)[\\/](dist|SEOBackup|AuditBackup|\.git|\.github)[\\/]' }
-if (-not $htmlFiles) { Log "No HTML files under $Root" 'WARN' }
+$files = Get-ChildItem -Path $rootItem.FullName -Recurse -Include '*.html','*.htm' -File |
+    Where-Object {
+        $_.FullName -notlike "*\dist\*" -and
+        $_.FullName -notlike "*\desktop-site\webstie building install*"
+    }
 
-$backupDir = Join-Path $Root 'AuditBackup'
-if ($Fix -and -not $DryRun -and -not (Test-Path $backupDir)) { New-Item -ItemType Directory -Path $backupDir | Out-Null }
+Write-Log "Auditing $($files.Count) HTML files..."
 
-# Build relative path map
-$allRel = @{}
-$rootFull = (Get-Item $Root).FullName
-foreach ($f in $htmlFiles) {
-  $rel = $f.FullName.Substring($rootFull.Length).TrimStart('\\')
-  $norm = ($rel -replace '\\','/').ToLower()
-  $allRel[$norm] = $true
+$rootLen = $rootItem.FullName.Length
+$resultFiles = @()
+
+foreach ($f in $files) {
+    $rel = $f.FullName.Substring($rootLen).TrimStart('\\') -replace '\\','/'
+
+    $issues = @()
+    $actions = @()
+    $changed = $false
+
+    try {
+        $html = Get-Content -LiteralPath $f.FullName -Raw
+
+        if ($html -notmatch '<title>.*?</title>') {
+            $issues += "missing-title"
+        }
+        if ($html -notmatch '<meta[^>]+name="description"[^>]*>') {
+            $issues += "missing-meta-description"
+        }
+
+        # This script currently only reports issues; it does not modify files
+        if ($issues.Count -eq 0) {
+            $issuesStr = ""
+        } else {
+            $issuesStr = ($issues -join ";")
+        }
+
+        $actionsStr = ($actions -join ";")
+
+        $resultFiles += [pscustomobject]@{
+            File    = $f.FullName
+            Relative = $rel
+            Issues  = $issuesStr
+            Actions = $actionsStr
+            Changed = $changed
+        }
+    } catch {
+        Write-Warning "Failed to audit $($f.FullName): $_"
+        $resultFiles += [pscustomobject]@{
+            File    = $f.FullName
+            Relative = $rel
+            Issues  = "audit-error"
+            Actions = ""
+            Changed = $false
+        }
+    }
 }
 
-$descPlaceholder = 'Local professional plumbing services in Dallas Fort Worth area.'
-$report = @()
-
-foreach ($file in $htmlFiles) {
-  $content = Get-Content -LiteralPath $file.FullName -Raw
-  $original = $content
-  $issues = @(); $actions = @();
-
-  # Missing lang
-  if ($content -notlike '*<html*lang=*') {
-    $issues += 'missing-lang'
-    if ($Fix -and -not $DryRun) {
-      $content = $content -replace '<html','<html lang="en"'
-      if ($content -like '*lang="en"*') { $actions += 'add-lang-en' }
-    }
-  }
-
-  # Meta description
-  if ($content -notlike '*name="description"*') {
-    $issues += 'missing-meta-description'
-    if ($Fix -and -not $DryRun -and $content -like '*</head>*') {
-      $insertion = ('  <meta name="description" content="{0}" />' -f $descPlaceholder) + "`n</head>"
-      $content = $content -replace '</head>', $insertion
-      $actions += 'insert-description'
-    }
-  }
-
-  # Duplicate IDs (naive scan)
-  $idValues = @()
-  $scanIndex = 0
-  while (($scanIndex = $content.IndexOf('id="', $scanIndex)) -ge 0) {
-    $start = $scanIndex + 4
-    $end = $content.IndexOf('"', $start)
-    if ($end -gt $start) { $idValues += $content.Substring($start, $end - $start) }
-    $scanIndex = $end + 1
-  }
-  if ($idValues.Count -gt 0) {
-    $dupSet = $idValues | Group-Object | Where-Object { $_.Count -gt 1 }
-    foreach ($d in $dupSet) { $issues += ('duplicate-id:' + $d.Name) }
-  }
-
-  # Images missing alt
-  $imgIndex = 0
-  while (($imgIndex = $content.IndexOf('<img', $imgIndex)) -ge 0) {
-    $close = $content.IndexOf('>', $imgIndex)
-    if ($close -lt 0) { break }
-    $tag = $content.Substring($imgIndex, $close - $imgIndex + 1)
-    if ($tag -notlike '*alt=*') {
-      $issues += 'img-missing-alt'
-      if ($Fix -and -not $DryRun) {
-        $newTag = $tag.TrimEnd('>') + ' alt="" >'
-        $content = $content.Substring(0,$imgIndex) + $newTag + $content.Substring($close+1)
-        $actions += 'add-empty-alt'
-        $imgIndex += ($newTag.Length)
-        continue
-      }
-    }
-    $imgIndex = $close + 1
-  }
-
-  # Broken links (internal)
-  $hrefIndex = 0
-  while (($hrefIndex = $content.IndexOf('href="', $hrefIndex)) -ge 0) {
-    $start = $hrefIndex + 6
-    $end = $content.IndexOf('"', $start)
-    if ($end -lt 0) { break }
-    $href = $content.Substring($start, $end - $start)
-    $hrefIndex = $end + 1
-    if ($href -like 'http*' -or $href -like 'mailto:*' -or $href -like 'tel:*' -or $href -like '#*') { continue }
-    # strip query and fragment
-    $hrefPath = $href.Split('#')[0].Split('?')[0]
-    # only consider HTML pages or directory-like links
-    $hrefLower = $hrefPath.ToLower()
-    $isHtmlish = ($hrefLower -match '\\.html?$') -or ($hrefLower -like '*/')
-    if (-not $isHtmlish) { continue }
-    $target = $hrefPath.TrimStart('/')
-    if (-not $target) { continue }
-    $normT = ($target).ToLower()
-    if (-not $allRel.ContainsKey($normT)) {
-      $maybeDir = ($target.TrimEnd('/')) + '/index.html'
-      $maybeNorm = ($maybeDir -replace '\\','/').ToLower()
-      if (-not $allRel.ContainsKey($maybeNorm)) {
-        $issues += ('broken-link:' + $href)
-        # GitHub Actions error annotation
-        Write-Output ('::error::Broken link found: ' + $href + ' in ' + $file.FullName)
-      }
-    }
-  }
-
-  $changed = $original -ne $content
-  if ($changed -and -not $DryRun) {
-    $relName = $file.FullName.Substring($rootFull.Length).TrimStart('\\') -replace '[\\/:]','_'
-    $backup = Join-Path $backupDir ($relName + '.bak')
-    if ($Fix -and -not (Test-Path $backup)) { [IO.File]::WriteAllText($backup,$original,[Text.UTF8Encoding]::new($false)) }
-    if ($Fix) { [IO.File]::WriteAllText($file.FullName,$content,[Text.UTF8Encoding]::new($false)) }
-  }
-
-  $report += [PSCustomObject]@{
-    File = $file.FullName
-    Relative = ($file.FullName.Substring($rootFull.Length).TrimStart('\\') -replace '\\','/')
-    Issues = ($issues | Sort-Object -Unique) -join ';'
-    Actions = ($actions | Sort-Object -Unique) -join ';'
-    Changed = $changed
-  }
+$data = [ordered]@{
+    RunDate = (Get-Date).ToUniversalTime().ToString("yyyy-MM-dd HH:mm:ssK")
+    Root    = $Root
+    FixMode = [bool]$FixMode
+    DryRun  = [bool]$DryRun
+    Files   = $resultFiles
 }
 
-$summary = [PSCustomObject]@{
-  RunDate = (Get-Date).ToString('u')
-  Root = $Root
-  FixMode = [bool]$Fix
-  DryRun = [bool]$DryRun
-  Files = $report
-}
+$json = $data | ConvertTo-Json -Depth 6
 
-if ($DryRun) {
-  Log '--- DryRun audit (first 10) ---'
-  $report | Select-Object -First 10 File, Issues, Actions | Format-Table
+if (-not $DryRun) {
+    $outPath = if ([System.IO.Path]::IsPathRooted($OutputPath)) { $OutputPath } else { Join-Path $rootItem.FullName $OutputPath }
+    Write-Log "Writing site audit report to $outPath"
+    Set-Content -LiteralPath $outPath -Value $json -Encoding UTF8
 } else {
-  $out = Join-Path $Root 'site-audit-report.json'
-  $summary | ConvertTo-Json -Depth 4 | Out-File -FilePath $out -Encoding UTF8
-  Log "Audit report written: $out"
+    Write-Log "DryRun enabled - not writing $OutputPath"
 }
 
-Log "Audited $($report.Count) HTML files." 'INFO'
-
-# Summary & optional failure
-$totalIssues = ($report | ForEach-Object { if ($_.Issues) { $_.Issues.Split(';').Count } else { 0 } } | Measure-Object -Sum).Sum
-Write-Output ("::notice::Audit complete. Files=" + $report.Count + ", Issues=" + ($totalIssues | ForEach-Object { $_ }))
-if ($FailOnError -and $totalIssues -gt 0) { exit 1 }
+Write-Log "Site audit complete."

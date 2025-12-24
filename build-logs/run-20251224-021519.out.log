@@ -1,0 +1,25 @@
+==> SEO enhance
+[2025-12-24 02:15:19Z][INFO] Report written: .\seo-report.json
+[2025-12-24 02:15:19Z][INFO] Processed 0 page directories.
+? SEO enhance completed
+==> Site audit & fix
+[2025-12-24 02:15:45Z][INFO] Audit report written: .\site-audit-report.json
+[2025-12-24 02:15:45Z][INFO] Audited 580 HTML files.
+::notice::Audit complete. Files=580, Issues=1127
+? Site audit & fix completed
+==> Build
+[build] Root: .
+[build] Dist: C:\Users\Maitray\Desktop\448Plumbing\448 Plumbing website\dist
+[build] Collecting files to copy...
+[build] Found 697 files to copy before filtering.
+[build] After excluding /desktop-site, 50 files remain.
+[build] Wrote CNAME => www.448plumbing.com
+[build] Minifying CSS and JS files...
+[build] Cleaning HTML files...
+[build] Generating sitemap.xml with base URL: https://www.448plumbing.com
+[build] Wrote sitemap.xml to C:\Users\Maitray\Desktop\448Plumbing\448 Plumbing website\dist\sitemap.xml
+[build] Creating ZIP: C:\Users\Maitray\Desktop\448Plumbing\448 Plumbing website\site-dist-20251224-021602.zip
+[build] ZIP created: C:\Users\Maitray\Desktop\448Plumbing\448 Plumbing website\site-dist-20251224-021602.zip
+[build] Build finished.
+? Build completed
+All steps completed successfully.

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 48" role="img" aria-labelledby="title desc">
+  <title id="title">448 Plumbing Logo</title>
+  <desc id="desc">Wordmark logo for 448 Plumbing</desc>
+  <rect width="200" height="48" rx="8" fill="#111827"/>
+  <g font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, \"Apple Color Emoji\", \"Segoe UI Emoji\"" font-weight="800">
+    <text x="16" y="32" font-size="28" fill="#FDE68A">448</text>
+    <text x="92" y="32" font-size="20" fill="#FFFFFF">PLUMBING</text>
+  </g>
+</svg>
