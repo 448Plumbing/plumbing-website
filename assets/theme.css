@@ -59,12 +59,26 @@ body {
 }
 
 .brand-logo {
-  height: 44px; /* match visual cap height of the brand-name at common viewports */
+  height: 44px; /* legacy rectangular logo, kept for non-header uses */
   width: auto;
 }
 
 @media (min-width: 1024px) {
   .brand-logo { height: 48px; }
+}
+
+.brand-badge {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .brand-badge {
+    width: 48px;
+    height: 48px;
+  }
 }
 
 /* Tri-color brand text (black, silver, gold) with readable outline on dark header */
