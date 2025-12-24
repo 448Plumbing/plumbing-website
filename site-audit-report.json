@@ -1,9 +1,30 @@
 {
-  "RunDate": "2025-12-23 18:02:53Z",
+  "RunDate": "2025-12-23 21:16:01Z",
   "Root": ".",
   "FixMode": true,
   "DryRun": false,
   "Files": [
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\blog\\leak-checklist.html",
+      "Relative": "blog/leak-checklist.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\blog\\prevent-drain-clogs.html",
+      "Relative": "blog/prevent-drain-clogs.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\blog\\water-heater-lifespan.html",
+      "Relative": "blog/water-heater-lifespan.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
     {
       "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\desktop-site\\services.html\\index.html",
       "Relative": "desktop-site/services.html/index.html",
@@ -3869,6 +3890,13 @@
       "Changed": false
     },
     {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\commercial-plumbing.html",
+      "Relative": "commercial-plumbing.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
       "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\contact.html",
       "Relative": "contact.html",
       "Issues": "",
@@ -3876,8 +3904,99 @@
       "Changed": false
     },
     {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\drain-cleaning.html",
+      "Relative": "drain-cleaning.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\emergency-plumbing.html",
+      "Relative": "emergency-plumbing.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
       "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\index.html",
       "Relative": "index.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\leak-detection.html",
+      "Relative": "leak-detection.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\maintenance.html",
+      "Relative": "maintenance.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\plumbing-services-allen-tx.html",
+      "Relative": "plumbing-services-allen-tx.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\plumbing-services-carrollton-tx.html",
+      "Relative": "plumbing-services-carrollton-tx.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\plumbing-services-dallas-tx.html",
+      "Relative": "plumbing-services-dallas-tx.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\plumbing-services-garland-tx.html",
+      "Relative": "plumbing-services-garland-tx.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\plumbing-services-irving-tx.html",
+      "Relative": "plumbing-services-irving-tx.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\plumbing-services-mckinney-tx.html",
+      "Relative": "plumbing-services-mckinney-tx.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\plumbing-services-plano-tx.html",
+      "Relative": "plumbing-services-plano-tx.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\plumbing-services-richardson-tx.html",
+      "Relative": "plumbing-services-richardson-tx.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\plumbing-services-the-colony-tx.html",
+      "Relative": "plumbing-services-the-colony-tx.html",
       "Issues": "",
       "Actions": "",
       "Changed": false
@@ -3892,6 +4011,13 @@
     {
       "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\services.html",
       "Relative": "services.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\sewer-line-repair.html",
+      "Relative": "sewer-line-repair.html",
       "Issues": "",
       "Actions": "",
       "Changed": false
@@ -3913,6 +4039,20 @@
     {
       "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\terms.html",
       "Relative": "terms.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\water-heater-installation.html",
+      "Relative": "water-heater-installation.html",
+      "Issues": "",
+      "Actions": "",
+      "Changed": false
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\water-heater-repair.html",
+      "Relative": "water-heater-repair.html",
       "Issues": "",
       "Actions": "",
       "Changed": false

@@ -119,38 +119,6 @@ async function boot() {
       rmpTopbar.style.display = isHome ? '' : 'none';
     }
   } catch {}
-
-  // Formspree drop-in integration (optional)
-  try {
-    const form = document.getElementById('contactForm');
-    if (form) {
-      const id = form.dataset.formspree || '';
-      const hasRealId = id && id !== 'your_form_id';
-      if (hasRealId) {
-        const endpoint = `https://formspree.io/f/${id}`;
-        form.addEventListener('submit', async (e) => {
-          e.preventDefault();
-          if (!form.reportValidity()) return;
-          const data = Object.fromEntries(new FormData(form).entries());
-          try {
-            const res = await fetch(endpoint, {
-              method: 'POST',
-              headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
-              body: JSON.stringify(data)
-            });
-            if (res.ok) {
-              alert('Thanks! Your message has been sent.');
-              form.reset();
-            } else {
-              alert('Sorry, there was a problem sending your message. Please try again later.');
-            }
-          } catch {
-            alert('Network error. Please try again later.');
-          }
-        });
-      }
-    }
-  } catch {}
 }
 
 document.addEventListener('DOMContentLoaded', boot);
