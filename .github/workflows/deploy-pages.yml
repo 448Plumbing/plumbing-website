@@ -17,7 +17,7 @@ jobs:
       - name: Build dist
         shell: pwsh
         run: |
-          ./optimize-and-build.ps1 -Root "`$PWD" -BaseUrl "https://www.448plumbing.com" -FailOnError:`$false
+          ./optimize-and-build.ps1 -Root "`$PWD" -BaseUrl "https://www.448plumbing.com"
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
