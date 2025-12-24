@@ -55,6 +55,17 @@ jobs:
       - id: deployment
         uses: actions/deploy-pages@v4
 
+      - name: Smoke test deployed SEO files
+        shell: bash
+        run: |
+          set -e
+          echo "robots.txt status:"
+          curl -I -s https://www.448plumbing.com/robots.txt | head -n 5
+          echo "sitemap.xml status:"
+          curl -I -s https://www.448plumbing.com/sitemap.xml | head -n 5
+          echo "robots.txt body:"
+          curl -s https://www.448plumbing.com/robots.txt | head -n 20
+
   set-domain:
     # Best-effort post-deploy configuration to set custom domain and try HTTPS enforcement.
     # This does not fail the workflow if the API is not available or not yet ready.
