@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-Disallow: /desktop-site/
 Sitemap: https://www.448plumbing.com/sitemap.xml

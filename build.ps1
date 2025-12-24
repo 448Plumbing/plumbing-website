@@ -107,36 +107,45 @@ if (-not $DryRun) {
     }
 }
 
-# Generate sitemap.xml if BaseUrl provided
-if (-not [string]::IsNullOrEmpty($BaseUrl) -and -not $DryRun) {
-    Write-Log "Generating sitemap.xml with base URL: $BaseUrl"
-    $urls = Get-ChildItem -Path $Dist -Recurse -Include '*.html','*.htm' -File | ForEach-Object {
-        $rel = $_.FullName.Substring((Get-Item $Dist).FullName.Length).TrimStart('\\') -replace '\\','/'
-        if ($rel -like 'desktop-site/*') { return }
-        if ($rel -eq 'index.html') { $loc = $BaseUrl.TrimEnd('/') + '/' } else { $loc = $BaseUrl.TrimEnd('/') + '/' + $rel }
-        "  <url><loc>$loc</loc></url>"
-    }
-    $urls = $urls | Where-Object { $_ }
-    $body = $urls -join "`n"
-    $sitemapXml = @"
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-$body
-</urlset>
-"@
-    $sitemapPath = Join-Path $Dist 'sitemap.xml'
-    Set-Content -Path $sitemapPath -Value $sitemapXml -Encoding UTF8
-    Write-Log "Wrote sitemap.xml to $sitemapPath"
-}
-
-# Write robots.txt
+# --- Generate dist\sitemap.xml from the HTML files in dist ---
 if (-not $DryRun) {
-    $lines = @("User-agent: *","Allow: /","Disallow: /desktop-site/")
-    if (-not [string]::IsNullOrEmpty($BaseUrl)) {
-        $lines += "Sitemap: $($BaseUrl.TrimEnd('/'))/sitemap.xml"
+    # Use provided BaseUrl when available, otherwise fall back to production URL
+    $effectiveBaseUrl = if ([string]::IsNullOrEmpty($BaseUrl)) { 'https://www.448plumbing.com' } else { $BaseUrl.TrimEnd('/') }
+
+    $distRoot = Get-Item $Dist
+    if (-not (Test-Path $distRoot.FullName)) { throw "dist folder missing at: $($distRoot.FullName)" }
+
+    $urls = Get-ChildItem $distRoot.FullName -Recurse -Filter *.html -File | ForEach-Object {
+        $rel = $_.FullName.Substring($distRoot.FullName.Length) -replace '^[\\/]+',''
+        $rel = $rel -replace '\\','/'
+        if ($rel -like 'desktop-site/*') { return }
+        if ($rel -ieq 'index.html') { "$effectiveBaseUrl/" } else { "$effectiveBaseUrl/$rel" }
+    } | Sort-Object -Unique
+
+    $lines = New-Object System.Collections.Generic.List[string]
+    $lines.Add('<?xml version="1.0" encoding="UTF-8"?>') | Out-Null
+    $lines.Add('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">') | Out-Null
+    foreach ($u in $urls) { if ($u) { $lines.Add("  <url><loc>$u</loc></url>") | Out-Null } }
+    $lines.Add('</urlset>') | Out-Null
+
+    $sitemapPath = Join-Path $distRoot.FullName 'sitemap.xml'
+    $lines | Set-Content -Encoding UTF8 $sitemapPath
+    Write-Log "Wrote sitemap: $sitemapPath"
+
+    # Ensure robots.txt exists and references the sitemap
+    $robotsPath = Join-Path $distRoot.FullName 'robots.txt'
+    if (-not (Test-Path $robotsPath)) {
+@"
+User-agent: *
+Allow: /
+Sitemap: $effectiveBaseUrl/sitemap.xml
+"@ | Set-Content -Encoding UTF8 $robotsPath
+    } else {
+        $robots = Get-Content $robotsPath -Raw
+        if ($robots -notmatch 'Sitemap:\s*https?://') {
+            Add-Content -Encoding UTF8 $robotsPath "`r`nSitemap: $effectiveBaseUrl/sitemap.xml`r`n"
+        }
     }
-    $robots = $lines -join "`n"
-    Set-Content -LiteralPath (Join-Path $Dist 'robots.txt') -Value $robots -Force
 }
 
 # Zip the dist for convenience

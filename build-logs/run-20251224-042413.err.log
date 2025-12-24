@@ -1,0 +1,7 @@
+[31;1mInvoke-Step: [0mC:\Users\Maitray\Desktop\448Plumbing\448 Plumbing website\optimize-and-build.ps1:53:1[0m
+[31;1m[0m[36;1mLine |[0m
+[31;1m[0m[36;1m[36;1m  53 | [0m [36;1mInvoke-Step "Build" { & $buildScript -Root $Root -Dist $distPath -Dry[0m .[0m
+[31;1m[0m[36;1m[36;1m[0m[36;1m[0m[36;1m     | [31;1m ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+[31;1m[0m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m     | [31;1mStep 'Build' failed: Cannot convert argument "trimChars", with value: "\\", for[0m
+[31;1m[0m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1m[36;1m     | [31;1m"TrimStart" to type "System.Char": "Cannot convert value "\\" to type "System.Char".[0m
+[31;1m[0m[36;1m[36;1m[0m[36;1m[0m[36;1m[31;1m[31;1m[36;1m[31;1m[36;1m[31;1m[36;1m     | [31;1mError: "String must be exactly one character long.""[0m
