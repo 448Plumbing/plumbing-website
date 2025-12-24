@@ -1,6 +1,6 @@
 // Global maintenance mode configuration
 // Toggle this to enable/disable the maintenance gate.
-window.SITE_MAINTENANCE = true; // Set to false to turn maintenance mode OFF
+window.SITE_MAINTENANCE = false; // Set to false to turn maintenance mode OFF
 window.SITE_MAINTENANCE_KEY = '448m12040'; // Query-string key for bypass: ?key=448m12040
 
 // Simple maintenance-mode gate with query-string + cookie bypass
