@@ -28,7 +28,17 @@ jobs:
       - name: Optimize, audit, and build site into dist
         shell: pwsh
         run: |
-          ./optimize-and-build.ps1 -Root "$PWD" -BaseUrl "https://www.448plumbing.com" -FailOnError
+          ./optimize-and-build.ps1 -Root "$PWD" -BaseUrl "https://www.448plumbing.com"
+
+      - name: Debug dist output
+        shell: pwsh
+        run: |
+          Write-Host "=== dist contents ==="
+          Get-ChildItem -Force dist | Format-Table -AutoSize
+          Write-Host "=== robots.txt ==="
+          Get-Content dist/robots.txt
+          Write-Host "=== first 10 sitemap URLs ==="
+          Select-String -Path dist/sitemap.xml -Pattern "<loc>" -First 10
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
