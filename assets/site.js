@@ -1,3 +1,55 @@
+// Global maintenance mode configuration
+// Toggle this to enable/disable the maintenance gate.
+window.SITE_MAINTENANCE = true; // Set to false to turn maintenance mode OFF
+window.SITE_MAINTENANCE_KEY = '448'; // Query-string key for bypass: ?key=448
+
+// Simple maintenance-mode gate with query-string + cookie bypass
+(function () {
+  try {
+    if (window.SITE_MAINTENANCE !== true) return;
+
+    const path = window.location.pathname || '/';
+
+    // Always allow these paths even during maintenance
+    const alwaysAllowed = [
+      '/maintenance.html',
+      '/robots.txt',
+      '/sitemap.xml'
+    ];
+
+    const isAlwaysAllowed = (
+      alwaysAllowed.includes(path) ||
+      path.startsWith('/assets/') ||
+      path.startsWith('/partials/')
+    );
+
+    if (isAlwaysAllowed) return;
+
+    const params = new URLSearchParams(window.location.search || '');
+    const expectedKey = String(window.SITE_MAINTENANCE_KEY || '448');
+    const providedKey = params.get('key');
+
+    function hasBypassCookie() {
+      return document.cookie.split(';').some(c => c.trim().startsWith('maint_bypass=1'));
+    }
+
+    let bypass = hasBypassCookie();
+
+    if (providedKey && providedKey === expectedKey) {
+      const expires = new Date();
+      expires.setDate(expires.getDate() + 7);
+      document.cookie = 'maint_bypass=1; path=/; expires=' + expires.toUTCString() + '; SameSite=Lax';
+      bypass = true;
+    }
+
+    if (!bypass) {
+      window.location.replace('/maintenance.html');
+    }
+  } catch {
+    // Fail open if anything goes wrong to avoid locking out the site
+  }
+})();
+
 async function loadPartial(id, url) {
   try {
     const res = await fetch(url, { cache: 'no-cache' });
