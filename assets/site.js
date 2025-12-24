@@ -110,6 +110,16 @@ async function boot() {
     }
   } catch {}
 
+  // Home-page-only RMP badge in the top utility bar
+  try {
+    const path = window.location.pathname || '/';
+    const isHome = path === '/' || path === '/index.html';
+    const rmpTopbar = document.querySelector('[data-home-rmp-topbar]');
+    if (rmpTopbar) {
+      rmpTopbar.style.display = isHome ? '' : 'none';
+    }
+  } catch {}
+
   // Formspree drop-in integration (optional)
   try {
     const form = document.getElementById('contactForm');
