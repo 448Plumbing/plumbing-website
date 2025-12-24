@@ -16,8 +16,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Build dist
         shell: pwsh
-        run: |
-          ./optimize-and-build.ps1 -Root "`$PWD" -BaseUrl "https://www.448plumbing.com"
+        run: ./optimize-and-build.ps1 -Root "$env:GITHUB_WORKSPACE" -BaseUrl "https://www.448plumbing.com"
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
