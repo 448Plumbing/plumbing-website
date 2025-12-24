@@ -117,15 +117,16 @@ if (-not [string]::IsNullOrEmpty($BaseUrl) -and -not $DryRun) {
         "  <url><loc>$loc</loc></url>"
     }
     $urls = $urls | Where-Object { $_ }
-    $sitemapPath = Join-Path -Path $Dist -ChildPath 'sitemap.xml'
     $body = $urls -join "`n"
-    $sitemap = @"
+    $sitemapXml = @"
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 $body
 </urlset>
 "@
-    Set-Content -LiteralPath $sitemapPath -Value $sitemap -Force
+    $sitemapPath = Join-Path $Dist 'sitemap.xml'
+    Set-Content -Path $sitemapPath -Value $sitemapXml -Encoding UTF8
+    Write-Log "Wrote sitemap.xml to $sitemapPath"
 }
 
 # Write robots.txt

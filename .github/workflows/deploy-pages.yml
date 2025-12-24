@@ -30,6 +30,17 @@ jobs:
         run: |
           ./optimize-and-build.ps1 -Root "$PWD" -BaseUrl "https://www.448plumbing.com"
 
+      - name: Assert sitemap exists in dist
+        shell: pwsh
+        run: |
+          if (!(Test-Path "dist/sitemap.xml")) {
+            Write-Host "dist/sitemap.xml is missing!"
+            Get-ChildItem -Force dist | Format-Table -AutoSize
+            exit 1
+          }
+          Write-Host "Found dist/sitemap.xml"
+          Get-ChildItem -Force dist/sitemap.xml
+
       - name: Debug dist output
         shell: pwsh
         run: |
