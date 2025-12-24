@@ -33,12 +33,12 @@ jobs:
       - name: Debug dist output
         shell: pwsh
         run: |
-          Write-Host "=== dist contents ==="
+          Write-Host "--- dist contents ---"
           Get-ChildItem -Force dist | Format-Table -AutoSize
-          Write-Host "=== robots.txt ==="
+          Write-Host "--- robots.txt ---"
           Get-Content dist/robots.txt
-          Write-Host "=== first 10 sitemap URLs ==="
-          Select-String -Path dist/sitemap.xml -Pattern "<loc>" -First 10
+          Write-Host "--- first 10 sitemap locs ---"
+          Get-Content dist/sitemap.xml | Select-String "<loc>" | Select-Object -First 10
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
