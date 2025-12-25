@@ -349,4 +349,13 @@ footer { background: var(--color-charcoal); color: var(--color-surface); }
 /* Hero gradient using black and subtle highlight */
 .site-hero{background:linear-gradient(120deg, var(--color-charcoal), var(--color-primary-700)); color:var(--color-surface)}
 
+/* Review name pill in testimonials */
+.review-name{
+  color:#fff !important;
+  background:rgba(0,0,0,.75);
+  padding:6px 10px;
+  border-radius:10px;
+  display:inline-block;
+}
+
 
