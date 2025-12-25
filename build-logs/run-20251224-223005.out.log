@@ -1,0 +1,34 @@
+[optimize-and-build] Root: C:\Users\Maitray\Desktop\448Plumbing\448 Plumbing website
+[optimize-and-build] BaseUrl: https://www.448plumbing.com
+[optimize-and-build] Starting: Encoding cleanup
+[encoding-cleanup] Root: C:\Users\Maitray\Desktop\448Plumbing\448 Plumbing website
+[encoding-cleanup] Scanning 33 HTML files...
+[encoding-cleanup] Done. Changed 0 file(s).
+[optimize-and-build] Completed: Encoding cleanup
+[optimize-and-build] Starting: SEO enhancement
+[seo-enhance] Root: C:\Users\Maitray\Desktop\448Plumbing\448 Plumbing website
+[seo-enhance] Found 33 HTML pages to summarize.
+[seo-enhance] Writing SEO report to C:\Users\Maitray\Desktop\448Plumbing\448 Plumbing website\seo-report.json
+[seo-enhance] SEO summarization complete.
+[optimize-and-build] Completed: SEO enhancement
+[optimize-and-build] Starting: Site audit
+[site-audit] Root: C:\Users\Maitray\Desktop\448Plumbing\448 Plumbing website
+[site-audit] Auditing 33 HTML files...
+[site-audit] Writing site audit report to C:\Users\Maitray\Desktop\448Plumbing\448 Plumbing website\site-audit-report.json
+[site-audit] Site audit complete.
+[optimize-and-build] Completed: Site audit
+[optimize-and-build] Starting: Build
+[build] Root: .
+[build] Dist: .\dist
+[build] Collecting files to copy...
+[build] Found 50 files to copy before filtering.
+[build] After excluding /desktop-site, 50 files remain.
+[build] Wrote CNAME => www.448plumbing.com
+[build] Minifying CSS and JS files...
+[build] Cleaning HTML files...
+[build] Wrote sitemap: C:\Users\Maitray\Desktop\448Plumbing\448 Plumbing website\dist\sitemap.xml
+[build] Creating ZIP: .\site-dist-20251224-223007.zip
+[build] ZIP created: .\site-dist-20251224-223007.zip
+[build] Build finished.
+[optimize-and-build] Completed: Build
+[optimize-and-build] All steps completed successfully.
