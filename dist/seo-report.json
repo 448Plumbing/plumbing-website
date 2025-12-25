@@ -1,5 +1,5 @@
 {
-  "RunDate": "2025-12-25 05:25:10Z",
+  "RunDate": "2025-12-25 05:27:01Z",
   "Root": ".",
   "BaseUrl": "https://www.448plumbing.com/",
   "DryRun": false,
@@ -178,6 +178,13 @@
       "Url": "https://www.448plumbing.com/privacy.html",
       "Title": "Privacy Policy — 448 Plumbing",
       "Description": "Local professional plumbing services in the Dallas–Fort Worth area."
+    },
+    {
+      "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\service-area.html",
+      "Relative": "service-area.html",
+      "Url": "https://www.448plumbing.com/service-area.html",
+      "Title": "Full service area — 448 Plumbing",
+      "Description": "See the full 448 Plumbing service area across the Dallas–Fort Worth metro and surrounding suburbs."
     },
     {
       "File": "C:\\Users\\Maitray\\Desktop\\448Plumbing\\448 Plumbing website\\services.html",
