@@ -3,6 +3,19 @@
 window.SITE_MAINTENANCE = false; // Set to false to turn maintenance mode OFF
 window.SITE_MAINTENANCE_KEY = '448m12040'; // Query-string key for bypass: ?key=448m12040
 
+// Guaranteed cleanup: strip any stray rn / `r`n text nodes directly under <body>
+document.addEventListener('DOMContentLoaded', () => {
+  try {
+    const bad = new Set(['rn', 'r n', '`r`n']);
+    if (!document.body) return;
+    Array.from(document.body.childNodes).forEach(node => {
+      if (node.nodeType !== Node.TEXT_NODE) return;
+      const t = (node.textContent || '').trim();
+      if (bad.has(t)) node.remove();
+    });
+  } catch {}
+});
+
 // Simple maintenance-mode gate with query-string + cookie bypass
 (function () {
   try {
