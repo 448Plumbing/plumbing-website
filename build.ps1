@@ -1,154 +1,75 @@
 param(
-    [string]$Root = "C:\Users\Maitray\Desktop\448Plumbing\448 Plumbing website",
-    [string]$Dist = "C:\workspace\site\dist",
+    [string]$Root = ".",
+    [string]$Dist = "",
     [switch]$DryRun = $true,
-    [string]$BaseUrl = ""
+    [string]$BaseUrl = "https://www.448plumbing.com"
 )
+$ErrorActionPreference = "Stop"
+$rootPath = (Get-Item -LiteralPath $Root).FullName
+if ([string]::IsNullOrWhiteSpace($Dist)) { $Dist = Join-Path $rootPath 'dist' }
+$distPath = [IO.Path]::GetFullPath($Dist)
+if ($distPath -eq $rootPath) { throw 'Dist must differ from the source directory.' }
+$baseUri = [Uri]$BaseUrl
+$base = ($baseUri.Scheme + '://' + $baseUri.Host.ToLowerInvariant()).TrimEnd('/')
 
-function Write-Log { param($m) Write-Host "[build] $m" }
-
-Write-Log "Root: $Root"
-Write-Log "Dist: $Dist"
-if (-not (Test-Path $Root)) { Write-Error "Root path not found: $Root"; exit 1 }
-
-if ($DryRun) { Write-Log "DryRun enabled - no files will be changed. Use -DryRun:$false to perform the build." }
-
-# Normalize BaseUrl to ensure consistent lowercase domain and no trailing slash
-if (-not [string]::IsNullOrEmpty($BaseUrl)) {
-    try {
-        $uri = [Uri]$BaseUrl
-        $BaseUrl = ($uri.Scheme + '://' + $uri.Host.ToLowerInvariant()).TrimEnd('/')
-    } catch {
-        $BaseUrl = $BaseUrl.TrimEnd('/')
-    }
-}
-
-# Create dist folder
-if (Test-Path $Dist) { Remove-Item -Recurse -Force -ErrorAction SilentlyContinue $Dist }
-if (-not $DryRun) { New-Item -ItemType Directory -Path $Dist | Out-Null }
-
-# Copy static files (selective)
-$includeExtensions = @('*.html','*.htm','*.css','*.js','*.png','*.jpg','*.jpeg','*.gif','*.svg','*.webp','*.ico','*.json')
-Write-Log "Collecting files to copy..."
-$files = @()
-foreach ($ext in $includeExtensions) {
-    $files += Get-ChildItem -Path $Root -Recurse -Include $ext -File -ErrorAction SilentlyContinue
-}
-$files = $files | Sort-Object FullName -Unique
-Write-Log "Found $($files.Count) files to copy before filtering."
-
-# Exclude dev-only desktop-site docs from the build output
-$rootItem = Get-Item $Root
-$files = $files | Where-Object {
-    $relPath = $_.FullName.Substring($rootItem.FullName.Length).TrimStart('\\') -replace '\\','/'
-    -not $relPath.StartsWith('desktop-site/')
-}
-Write-Log "After excluding /desktop-site, $($files.Count) files remain."
-
-foreach ($f in $files) {
-    $rel = Resolve-Path -LiteralPath $f.FullName | ForEach-Object { $_.Path.Substring((Get-Item $Root).FullName.Length).TrimStart('\\') }
-    $dest = Join-Path -Path $Dist -ChildPath $rel
-    $destDir = Split-Path -Parent $dest
-    if (-not $DryRun) {
-        if (-not (Test-Path $destDir)) { New-Item -ItemType Directory -Path $destDir -Force | Out-Null }
-        Copy-Item -LiteralPath $f.FullName -Destination $dest -Force
-    }
-}
-
-# Ensure CNAME is written based on BaseUrl host when available
-if (-not $DryRun -and -not [string]::IsNullOrEmpty($BaseUrl)) {
-    try {
-        $uri = [Uri]$BaseUrl
-        $domain = $uri.Host.ToLowerInvariant()
-        $cnamePath = Join-Path $Dist 'CNAME'
-        Set-Content -LiteralPath $cnamePath -Value $domain -Encoding ASCII
-        Write-Log "Wrote CNAME => $domain"
-    } catch {
-        Write-Warning "Failed to derive CNAME from BaseUrl '$BaseUrl': $_"
-    }
-}
-
-# Minify CSS and JS (simple rules)
-if (-not $DryRun) {
-    Write-Log "Minifying CSS and JS files..."
-    Get-ChildItem -Path $Dist -Recurse -Include '*.css' -File | ForEach-Object {
-        try {
-            $txt = Get-Content -Raw -LiteralPath $_.FullName
-            # remove /* */ comments
-            $txt = [regex]::Replace($txt, '/\*.*?\*/', '', [System.Text.RegularExpressions.RegexOptions]::Singleline)
-            # collapse whitespace
-            $txt = [regex]::Replace($txt, '\s+', ' ')
-            Set-Content -LiteralPath $_.FullName -Value $txt -Force
-        } catch { Write-Warning "Failed to minify CSS: $($_.FullName) - $_" }
-    }
-    # Preserve JavaScript source. Regex comment removal corrupts URL strings
-    # and regular expressions; whitespace folding can change JS semantics.
-
-}
-
-# Strip HTML comments (light) and optionally collapse whitespace between tags
-if (-not $DryRun) {
-    Write-Log "Cleaning HTML files..."
-    Get-ChildItem -Path $Dist -Recurse -Include '*.html','*.htm' -File | ForEach-Object {
-        try {
-            $txt = Get-Content -Raw -LiteralPath $_.FullName
-            $txt = [regex]::Replace($txt, '<!--.*?-->', '', [System.Text.RegularExpressions.RegexOptions]::Singleline)
-            # collapse multiple blank lines
-            $txt = [regex]::Replace($txt, '\n\s*\n', "`n")
-            Set-Content -LiteralPath $_.FullName -Value $txt -Force
-        } catch { Write-Warning "Failed to clean HTML: $($_.FullName) - $_" }
-    }
-}
-
-# --- Generate dist\sitemap.xml from the HTML files in dist ---
-if (-not $DryRun) {
-    # Use provided BaseUrl when available, otherwise fall back to production URL
-    $effectiveBaseUrl = if ([string]::IsNullOrEmpty($BaseUrl)) { 'https://www.448plumbing.com' } else { $BaseUrl.TrimEnd('/') }
-
-    $distRoot = Get-Item $Dist
-    if (-not (Test-Path $distRoot.FullName)) { throw "dist folder missing at: $($distRoot.FullName)" }
-
-    $urls = Get-ChildItem $distRoot.FullName -Recurse -Filter *.html -File | ForEach-Object {
-        $rel = $_.FullName.Substring($distRoot.FullName.Length) -replace '^[\\/]+',''
-        $rel = $rel -replace '\\','/'
-        if ($rel -like 'desktop-site/*') { return }
-        if ($rel -ieq 'index.html') { "$effectiveBaseUrl/" } else { "$effectiveBaseUrl/$rel" }
-    } | Sort-Object -Unique
-
-    $lines = New-Object System.Collections.Generic.List[string]
-    $lines.Add('<?xml version="1.0" encoding="UTF-8"?>') | Out-Null
-    $lines.Add('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">') | Out-Null
-    foreach ($u in $urls) { if ($u) { $lines.Add("  <url><loc>$u</loc></url>") | Out-Null } }
-    $lines.Add('</urlset>') | Out-Null
-
-    $sitemapPath = Join-Path $distRoot.FullName 'sitemap.xml'
-    $lines | Set-Content -Encoding UTF8 $sitemapPath
-    Write-Log "Wrote sitemap: $sitemapPath"
-
-    # Ensure robots.txt exists and references the sitemap
-    $robotsPath = Join-Path $distRoot.FullName 'robots.txt'
-    if (-not (Test-Path $robotsPath)) {
-@"
-User-agent: *
-Allow: /
-Sitemap: $effectiveBaseUrl/sitemap.xml
-"@ | Set-Content -Encoding UTF8 $robotsPath
-    } else {
-        $robots = Get-Content $robotsPath -Raw
-        if ($robots -notmatch 'Sitemap:\s*https?://') {
-            Add-Content -Encoding UTF8 $robotsPath "`r`nSitemap: $effectiveBaseUrl/sitemap.xml`r`n"
+# Publish only website files. Reports, build logs and source tooling stay private to the repo.
+$files = @(Get-ChildItem -LiteralPath $rootPath -File | Where-Object { $_.Extension -in @('.html', '.htm') })
+foreach ($folder in @('assets', 'blog', 'partials')) {
+    $path = Join-Path $rootPath $folder
+    if (Test-Path -LiteralPath $path) {
+        $files += Get-ChildItem -LiteralPath $path -Recurse -File | Where-Object {
+            $_.Extension -in @('.html','.htm','.css','.js','.png','.jpg','.jpeg','.gif','.svg','.webp','.ico','.woff','.woff2') -and
+            $_.Name -ne 'tailwind-input.css'
         }
     }
 }
-
-# Zip the dist for convenience
-$zipPath = Join-Path -Path (Split-Path -Parent $Dist) -ChildPath "site-dist-$(Get-Date -Format yyyyMMdd-HHmmss).zip"
-if (-not $DryRun) {
-    Write-Log "Creating ZIP: $zipPath"
-    if (Test-Path $zipPath) { Remove-Item $zipPath -Force }
-    Add-Type -AssemblyName System.IO.Compression.FileSystem
-    [System.IO.Compression.ZipFile]::CreateFromDirectory($Dist, $zipPath)
-    Write-Log "ZIP created: $zipPath"
+if ($DryRun) { Write-Host "[build] Would publish $($files.Count) files to $distPath"; return }
+# GitHub's runner has npx; regenerate utilities for future HTML edits.
+# Local previews may use the checked-in CSS when Node/npm is unavailable.
+$npxCommand = Get-Command npx -ErrorAction SilentlyContinue
+if ($npxCommand) {
+    Push-Location $rootPath
+    try {
+        & $npxCommand.Source --yes tailwindcss@3.4.17 -i assets/tailwind-input.css -o assets/utilities.css --content './*.html,./partials/*.html,./blog/*.html,./assets/*.js' --minify
+        if ($LASTEXITCODE -ne 0) { throw 'Tailwind CSS generation failed.' }
+    } finally { Pop-Location }
+} elseif (-not (Test-Path -LiteralPath (Join-Path $rootPath 'assets/utilities.css'))) {
+    throw 'Generate assets/utilities.css before building without npm.'
 }
+if (Test-Path -LiteralPath $distPath) { Remove-Item -LiteralPath $distPath -Recurse -Force }
+New-Item -ItemType Directory -Path $distPath -Force | Out-Null
+$header = Get-Content -LiteralPath (Join-Path $rootPath 'partials/header.html') -Raw
+$footer = Get-Content -LiteralPath (Join-Path $rootPath 'partials/footer.html') -Raw
 
-Write-Log "Build finished."
+foreach ($file in $files) {
+    $relative = [IO.Path]::GetRelativePath($rootPath, $file.FullName)
+    $destination = Join-Path $distPath $relative
+    New-Item -ItemType Directory -Path (Split-Path -Parent $destination) -Force | Out-Null
+    if ($file.Extension -in @('.html','.htm') -and $relative -notmatch '^partials[\\/]') {
+        $content = Get-Content -LiteralPath $file.FullName -Raw
+        $content = $content.Replace('<div id="site-header"></div>', '<div id="site-header">' + $header + '</div>')
+        $content = $content.Replace('<div id="site-footer"></div>', '<div id="site-footer">' + $footer + '</div>')
+        # A working fallback when JavaScript is disabled: show navigation and leave contact links usable.
+        $content = $content.Replace('</head>', '<noscript><style>#mobileMenu{display:block !important}#mobileMenuBtn,[data-analytics-settings]{display:none !important}</style></noscript></head>')
+        Set-Content -LiteralPath $destination -Value $content -Encoding utf8
+    } else {
+        # Do not regex-minify JS: strings and regular expressions can contain comment-like text.
+        Copy-Item -LiteralPath $file.FullName -Destination $destination -Force
+    }
+}
+Set-Content -LiteralPath (Join-Path $distPath 'CNAME') -Value $baseUri.Host.ToLowerInvariant() -Encoding ascii
+
+# Include only real, indexable pages; never headers, footers, redirects or thank-you/404 pages.
+$urls = foreach ($file in Get-ChildItem -LiteralPath $distPath -Recurse -Filter '*.html' -File) {
+    $relative = [IO.Path]::GetRelativePath($distPath, $file.FullName).Replace('\','/')
+    if ($relative -match '^(partials|assets)/') { continue }
+    $content = Get-Content -LiteralPath $file.FullName -Raw
+    if ($content -match '<meta[^>]+name="robots"[^>]+content="[^"]*noindex' -or $content -match '<meta[^>]+http-equiv="refresh"') { continue }
+    if ($relative -eq 'index.html') { "$base/" } else { "$base/$relative" }
+}
+$lines = @('<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">')
+foreach ($url in ($urls | Sort-Object -Unique)) { $lines += '  <url><loc>' + [Security.SecurityElement]::Escape($url) + '</loc></url>' }
+$lines += '</urlset>'
+$lines | Set-Content -LiteralPath (Join-Path $distPath 'sitemap.xml') -Encoding utf8
+"User-agent: *`nAllow: /`nSitemap: $base/sitemap.xml" | Set-Content -LiteralPath (Join-Path $distPath 'robots.txt') -Encoding utf8
+Write-Host "[build] Published $($files.Count) files; $(@($urls).Count) indexable pages."

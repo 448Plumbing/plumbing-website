@@ -21,23 +21,22 @@
   <meta name="twitter:description" content="448 Plumbing provides emergency plumbing from 7 a.m. to 10 p.m., drain cleaning, water heater repair, and leak detection across Dallas–Fort Worth.">
   <meta name="twitter:image" content="https://www.448plumbing.com/assets/hero-1200x630.svg">
   <!-- Tailwind + theme -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="/assets/theme.css">
+  <link rel="stylesheet" href="/assets/utilities.css?v=20260910a">
+  <link rel="stylesheet" href="/assets/theme.css?v=20260910a">
   <!-- AOS (animations) -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Shared header/footer loader -->
-  <script src="/assets/site.js" defer></script>
+  <script src="/assets/site.js?v=20260910a" defer></script>
   
 </head>
 <body class="antialiased text-gray-800">
   <!-- Shared header (includes top utility bar) -->
   <div id="site-header"></div>
 
-  <main>
+  <main id="main-content">
     <!-- Hero / Above-the-fold -->
     <section class="site-hero site-section-pad">
       <div class="site-container grid md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)] gap-10 items-center">
-        <div data-aos="fade-right">
+        <div>
           <p class="text-xs uppercase tracking-[0.18em] text-[color:var(--color-primary-soft)]">Licensed Dallas / Fort Worth Plumbers</p>
           <h1 class="mt-3 text-3xl md:text-5xl font-extrabold">Fast, professional plumbing in DFW.</h1>
           <p class="mt-4 max-w-xl text-sm md:text-base">448 Plumbing handles emergency leaks, drain clogs, water heater issues, and everyday plumbing repairs with licensed, insured technicians and upfront pricing.</p>
@@ -64,7 +63,7 @@
             </div>
           </div>
         </div>
-        <div class="hidden md:block" data-aos="fade-left">
+        <div class="hidden md:block">
           <img src="/assets/hero-448-team-1200x630.png" alt="448 Plumbing team standing in front of service van" loading="lazy" width="640" height="360" class="rounded-xl shadow-lg object-cover w-full h-full">
         </div>
       </div>
@@ -84,7 +83,7 @@
         </div>
 
         <div class="grid md:grid-cols-3 gap-6 mt-8">
-          <article class="site-card p-6" data-aos="fade-up">
+          <article class="site-card p-6">
             <h3 class="text-xl font-semibold">Emergency Plumbing</h3>
             <p class="mt-2 text-sm text-gray-600">Burst pipes, overflowing toilets, sudden leaks — reach us 7 a.m.–10 p.m. and we&apos;ll get you taken care of fast.</p>
             <ul class="mt-3 list-disc list-inside text-sm text-gray-600 space-y-1">
@@ -95,7 +94,7 @@
             <a href="/emergency-plumbing.html" class="mt-4 inline-block site-btn-gold px-4 py-2 rounded-md text-sm font-semibold">Emergency plumbing details</a>
           </article>
 
-          <article class="site-card p-6" data-aos="fade-up" data-aos-delay="75">
+          <article class="site-card p-6">
             <h3 class="text-xl font-semibold">Drain Cleaning</h3>
             <p class="mt-2 text-sm text-gray-600">Slow or backed-up drains in kitchens, bathrooms, and floor drains.</p>
             <ul class="mt-3 list-disc list-inside text-sm text-gray-600 space-y-1">
@@ -106,7 +105,7 @@
             <a href="/drain-cleaning.html" class="mt-4 inline-block site-btn-gold px-4 py-2 rounded-md text-sm font-semibold">Drain cleaning services</a>
           </article>
 
-          <article class="site-card p-6" data-aos="fade-up" data-aos-delay="150">
+          <article class="site-card p-6">
             <h3 class="text-xl font-semibold">Water Heaters</h3>
             <p class="mt-2 text-sm text-gray-600">Repair, replace, or upgrade traditional tank and tankless water heaters.</p>
             <ul class="mt-3 list-disc list-inside text-sm text-gray-600 space-y-1">
@@ -120,7 +119,7 @@
             </div>
           </article>
 
-          <article class="site-card p-6" data-aos="fade-up" data-aos-delay="200">
+          <article class="site-card p-6">
             <h3 class="text-xl font-semibold">Water Softeners</h3>
             <p class="mt-2 text-sm text-gray-600">Reduce hard-water scale, protect fixtures, and improve water feel.</p>
             <ul class="mt-3 list-disc list-inside text-sm text-gray-600 space-y-1">
@@ -131,7 +130,7 @@
             <a href="/services.html#water-softeners" class="mt-4 inline-block site-btn-gold px-4 py-2 rounded-md text-sm font-semibold">Water softener service</a>
           </article>
 
-          <article class="site-card p-6" data-aos="fade-up" data-aos-delay="225">
+          <article class="site-card p-6">
             <h3 class="text-xl font-semibold">Leak &amp; Slab Leak Detection</h3>
             <p class="mt-2 text-sm text-gray-600">Find and fix hidden leaks before they cause structural or mold damage.</p>
             <ul class="mt-3 list-disc list-inside text-sm text-gray-600 space-y-1">
@@ -142,7 +141,7 @@
             <a href="/leak-detection.html" class="mt-4 inline-block site-btn-gold px-4 py-2 rounded-md text-sm font-semibold">Leak detection services</a>
           </article>
 
-          <article class="site-card p-6" data-aos="fade-up" data-aos-delay="300">
+          <article class="site-card p-6">
             <h3 class="text-xl font-semibold">Sewer &amp; Gas Lines</h3>
             <p class="mt-2 text-sm text-gray-600">From slow main lines to gas line repairs, we work to keep your home safe.</p>
             <ul class="mt-3 list-disc list-inside text-sm text-gray-600 space-y-1">
@@ -153,7 +152,7 @@
             <a href="/sewer-line-repair.html" class="mt-4 inline-block site-btn-gold px-4 py-2 rounded-md text-sm font-semibold">Sewer &amp; gas services</a>
           </article>
 
-          <article class="site-card p-6" data-aos="fade-up" data-aos-delay="375">
+          <article class="site-card p-6">
             <h3 class="text-xl font-semibold">Fixtures &amp; Commercial</h3>
             <p class="mt-2 text-sm text-gray-600">Toilets, faucets, disposals, and light commercial plumbing support.</p>
             <ul class="mt-3 list-disc list-inside text-sm text-gray-600 space-y-1">
@@ -170,24 +169,24 @@
     <!-- Why 448 Plumbing -->
     <section class="site-section-pad">
       <div class="site-container">
-        <div class="max-w-3xl" data-aos="fade-up">
+        <div class="max-w-3xl">
           <h2 class="text-2xl md:text-3xl font-bold">Why homeowners choose 448 Plumbing</h2>
           <p class="mt-2 text-sm md:text-base text-gray-600">We built 448 Plumbing around clear communication, clean work, and doing the job right the first time.</p>
         </div>
         <div class="mt-8 grid md:grid-cols-4 gap-4">
-          <article class="site-card-simple p-5" data-aos="fade-up">
+          <article class="site-card-simple p-5">
             <h3 class="text-base font-semibold">Fast communication</h3>
             <p class="mt-2 text-sm text-gray-600">You'll get clear updates, text or phone confirmations, and honest arrival windows.</p>
           </article>
-          <article class="site-card-simple p-5" data-aos="fade-up" data-aos-delay="75">
+          <article class="site-card-simple p-5">
             <h3 class="text-base font-semibold">Clean, respectful work</h3>
             <p class="mt-2 text-sm text-gray-600">Drop cloths, shoe covers, and thorough clean-up so your home looks the way we found it.</p>
           </article>
-          <article class="site-card-simple p-5" data-aos="fade-up" data-aos-delay="150">
+          <article class="site-card-simple p-5">
             <h3 class="text-base font-semibold">Upfront pricing</h3>
             <p class="mt-2 text-sm text-gray-600">We review options and pricing before work begins so there are no surprises.</p>
           </article>
-          <article class="site-card-simple p-5" data-aos="fade-up" data-aos-delay="225">
+          <article class="site-card-simple p-5">
             <h3 class="text-base font-semibold">Quality guarantee</h3>
             <p class="mt-2 text-sm text-gray-600">We stand behind our workmanship and will make things right if something isn't perfect.</p>
           </article>
@@ -198,12 +197,12 @@
     <!-- About + stats -->
     <section class="site-section-pad bg-gray-50">
       <div class="site-container grid md:grid-cols-3 gap-8 items-start">
-        <div class="md:col-span-2" data-aos="fade-right">
+        <div class="md:col-span-2">
           <h2 class="text-2xl md:text-3xl font-bold">Trusted local plumbers in Dallas–Fort Worth</h2>
           <p class="mt-3 text-sm md:text-base text-gray-600">448 Plumbing has provided professional plumbing services to homeowners and businesses across Dallas and Fort Worth. Our technicians are trained, background-checked, and committed to clean, efficient work on every call.</p>
           <p class="mt-3 text-sm md:text-base text-gray-600">Whether you're dealing with an emergency leak or planning a remodel, we take time to understand your situation, explain options in plain language, and follow through until you're completely comfortable with the result.</p>
         </div>
-        <div class="space-y-4" data-aos="fade-left">
+        <div class="space-y-4">
           <div class="site-card-simple p-4">
             <p class="text-xs uppercase tracking-[0.18em] text-gray-500">Years of experience</p>
             <p class="mt-1 text-2xl font-extrabold">10+ years</p>
@@ -226,21 +225,21 @@
     <!-- Reviews -->
     <section class="site-section-pad">
       <div class="site-container">
-        <div class="max-w-3xl mx-auto text-center" data-aos="fade-up">
+        <div class="max-w-3xl mx-auto text-center">
           <h2 class="text-2xl md:text-3xl font-bold">Homeowners trust 448 Plumbing</h2>
           <p class="mt-2 text-sm md:text-base text-gray-600">Real feedback from Dallas–Fort Worth homeowners we've helped with leaks, clogs, and water heater issues.</p>
         </div>
         <div class="mt-8 grid md:grid-cols-3 gap-6">
-          <blockquote class="site-card-simple p-6" data-aos="fade-up">
+          <blockquote class="site-card-simple p-6">
             <p class="text-sm text-gray-600">"Arrived fast and fixed a major leak. Professional, friendly, and careful about keeping our home clean."
             </p>
             <footer class="mt-4 text-xs text-gray-500 review-name">— Sarah, Dallas</footer>
           </blockquote>
-          <blockquote class="site-card-simple p-6" data-aos="fade-up" data-aos-delay="75">
+          <blockquote class="site-card-simple p-6">
             <p class="text-sm text-gray-600">"Clear estimate before any work, no surprises on the invoice, and they explained everything in plain language."</p>
             <footer class="mt-4 text-xs text-gray-500 review-name">— Miguel, Fort Worth</footer>
           </blockquote>
-          <blockquote class="site-card-simple p-6" data-aos="fade-up" data-aos-delay="150">
+          <blockquote class="site-card-simple p-6">
             <p class="text-sm text-gray-600">"They replaced our water heater quickly, helped us pick the right size, and left the area spotless."</p>
             <footer class="mt-4 text-xs text-gray-500 review-name">— Lisa, Arlington</footer>
           </blockquote>
@@ -254,16 +253,16 @@
     <!-- Service areas teaser -->
     <section class="site-section-pad bg-gray-50">
       <div class="site-container">
-        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4" data-aos="fade-up">
+        <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
           <div>
             <h2 class="text-2xl md:text-3xl font-bold">Serving Dallas and the surrounding suburbs</h2>
             <p class="mt-2 text-sm md:text-base text-gray-600 max-w-2xl">We focus on Dallas–Fort Worth neighborhoods so we can provide fast response times and consistent, high-quality work.</p>
           </div>
-          <a href="/service-area.html" class="btn-outline px-5 py-2.5 rounded-md text-sm font-semibold">View full service area</a>
+          <a href="/areas.html" class="btn-outline px-5 py-2.5 rounded-md text-sm font-semibold">View full service area</a>
         </div>
         <div class="mt-6 grid sm:grid-cols-2 md:grid-cols-5 gap-3 text-sm text-gray-700">
           <a href="/plumbing-services-dallas-tx.html" class="site-card-simple p-3">Dallas, TX</a>
-          <a href="/plumbing-services-dallas-tx.html" class="site-card-simple p-3">Fort Worth, TX</a>
+          <a href="/areas.html#fort-worth" class="site-card-simple p-3">Fort Worth, TX</a>
           <a href="/plumbing-services-plano-tx.html" class="site-card-simple p-3">Plano, TX</a>
           <a href="/plumbing-services-frisco-tx.html" class="site-card-simple p-3">Frisco, TX</a>
           <a href="/plumbing-services-mckinney-tx.html" class="site-card-simple p-3">McKinney, TX</a>
@@ -301,9 +300,6 @@
   <div id="site-footer"></div>
 
   <!-- AOS & Feather (optional) -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://unpkg.com/feather-icons"></script>
-  <script> if (typeof AOS !== 'undefined') AOS.init(); if (typeof feather !== 'undefined') feather.replace(); </script>
 
   <!-- JSON-LD LocalBusiness schema for local SEO -->
   <script type="application/ld+json">
