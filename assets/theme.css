@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap');
 
 /* Logo-derived design tokens */
 :root {
@@ -13,7 +12,7 @@
   --color-surface: #f9fafb;       /* card/surface background */
   --color-bg: #f3f4f6;            /* page background */
   --color-text: #111827;          /* primary text */
-  --color-muted: #6b7280;         /* secondary text */
+  --color-muted: #4b5563;         /* secondary text */
   --color-border: #e5e7eb;        /* subtle borders/dividers */
   --color-primary-soft: #60a5fa;  /* lighter blue tint for accents */
 
@@ -139,7 +138,7 @@ body {
 
 /* Nav link styling: clean text links with subtle hover */
 .site-nav {
-  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-family: var(--font-sans);
   color: var(--color-charcoal);
   background: transparent;
   border: none;
@@ -270,8 +269,8 @@ a:hover, a:focus { color: var(--color-surface); background-color: var(--color-pr
 }
 
 /* Header & footer */
-header { background: var(--color-charcoal); color: var(--color-surface); }
-header a { color: var(--color-surface); }
+#site-header header { background: var(--color-charcoal); color: var(--color-surface); }
+#site-header header a { color: var(--color-surface); }
 footer { background: var(--color-charcoal); color: var(--color-surface); }
 
 .site-topbar {
@@ -383,3 +382,24 @@ footer { background: var(--color-charcoal); color: var(--color-surface); }
   .analytics-choice {bottom:calc(4.75rem + env(safe-area-inset-bottom));display:block;}
   .analytics-choice .analytics-actions {margin-top:.75rem;}
 }
+.site-hero .estimate-card h2,.site-hero .estimate-card p {color:#172033;text-shadow:none;}
+.site-hero .estimate-card .estimate-note {color:#475569;}
+
+/* Keep navigation readable on white panels and article headers independent. */
+#site-header .site-topbar a {color:#bfdbfe;}
+#site-header .site-nav {color:#172033;}
+#site-header .site-nav.active {color:#1d4ed8 !important;border-color:#1d4ed8;}
+#site-header #mobileMenu a {color:#172033;min-height:44px;}
+#site-header #mobileMenu a:hover,#site-header #mobileMenu a:focus {color:#fff;}
+#site-header #mobileMenu a[aria-current="page"] {font-weight:700;}
+#mobileMenuBtn {color:#172033;min-width:44px;min-height:44px;border:1px solid #d1d5db;border-radius:.4rem;}
+.site-footer h2 {color:#f9fafb;}
+.site-footer .text-gray-500 {color:#cbd5e1 !important;}
+.site-footer a:hover,.site-footer a:focus {color:white;}
+.skip-link {position:absolute;left:1rem;top:-10rem;z-index:110;padding:.75rem 1rem;background:#fff;color:#172033;border:2px solid #1d4ed8;border-radius:.4rem;}
+.skip-link:focus {top:.5rem;}
+:focus-visible {outline:3px solid #1d4ed8;outline-offset:3px;}
+#main-content {scroll-margin-top:1rem;}
+article > header {background:transparent;color:var(--color-text);}
+@media(max-width:767px) {.brand-actions {width:100%;justify-content:space-between;}input,textarea,select {font-size:16px;}.site-topbar a {min-height:24px;}}
+@media(prefers-reduced-motion:reduce) {html {scroll-behavior:auto;}*,*::before,*::after {animation-duration:.01ms !important;transition-duration:.01ms !important;}}

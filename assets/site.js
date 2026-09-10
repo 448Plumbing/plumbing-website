@@ -75,21 +75,8 @@ async function loadPartial(id, url) {
 async function boot() {
   const headerC = document.getElementById('site-header');
   const footerC = document.getElementById('site-footer');
-  if (headerC) await loadPartial('site-header', '/partials/header.html');
-  if (footerC) await loadPartial('site-footer', '/partials/footer.html');
-
-  // Force-refresh theme.css to avoid CDN/browser cache after updates
-  try {
-    const links = Array.from(document.querySelectorAll('link[rel="stylesheet"]'));
-    links.forEach(l => {
-      const href = l.getAttribute('href') || '';
-      if (href.includes('/assets/theme.css')) {
-        const url = new URL(href, window.location.origin);
-        url.searchParams.set('v', String(Math.floor(Date.now() / 1000)));
-        l.setAttribute('href', url.pathname + '?' + url.searchParams.toString());
-      }
-    });
-  } catch {}
+  if (headerC && !headerC.firstElementChild) await loadPartial('site-header', '/partials/header.html');
+  if (footerC && !footerC.firstElementChild) await loadPartial('site-footer', '/partials/footer.html');
 
   // After injection, wire up mobile menu
   const btn = document.getElementById('mobileMenuBtn');
@@ -98,15 +85,25 @@ async function boot() {
     btn.addEventListener('click', () => {
       const open = menu.classList.toggle('hidden') === false;
       btn.setAttribute('aria-expanded', String(open));
+      btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
     });
   }
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && btn && menu && !menu.classList.contains('hidden')) {
+      menu.classList.add('hidden');
+      btn.setAttribute('aria-expanded', 'false');
+      btn.setAttribute('aria-label', 'Open menu');
+      btn.focus();
+    }
+  });
 
   // Active link highlighting in header nav
   try {
     const current = window.location.pathname.replace(/\/index\.html$/, '/');
     const header = document.getElementById('site-header');
     if (header) {
-      const links = header.querySelectorAll('a[href]');
+      const links = header.querySelectorAll('.site-nav, #mobileMenu a[href]');
       links.forEach(a => {
         try {
           const u = new URL(a.getAttribute('href'), window.location.origin);
@@ -139,7 +136,7 @@ document.addEventListener('DOMContentLoaded', boot);
 // Visitor reporting and inquiry measurement are isolated from navigation.
 (function () {
   const script = document.createElement('script');
-  script.src = '/assets/analytics.js';
+  script.src = '/assets/analytics.js?v=20260910a';
   script.defer = true;
   document.head.appendChild(script);
 })();
