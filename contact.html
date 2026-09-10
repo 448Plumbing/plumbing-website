@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Contact — 448 Plumbing</title>
-  <meta name="description" content="Contact 448 Plumbing for fast, friendly plumbing service in Dallas–Fort Worth." />
+  <meta name="description" content="Call or text 448 Plumbing at 214-718-6990 for plumbing estimates in Plano and Dallas–Fort Worth. Emergency service: 7 a.m.–10 p.m." />
   <link rel="canonical" href="https://www.448Plumbing.com/contact.html" />
   <meta name="robots" content="index,follow">
   <link rel="icon" href="/assets/favicon.svg">
@@ -14,13 +14,13 @@
   <meta property="og:site_name" content="448 Plumbing">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Contact — 448 Plumbing">
-  <meta property="og:description" content="Contact 448 Plumbing for fast, friendly plumbing service in Dallas–Fort Worth.">
+  <meta property="og:description" content="Call or text 448 Plumbing at 214-718-6990 for plumbing estimates in Plano and Dallas–Fort Worth. Emergency service: 7 a.m.–10 p.m.">
   <meta property="og:url" content="https://www.448Plumbing.com/contact.html">
   <meta property="og:image" content="https://www.448Plumbing.com/assets/logo.svg">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Contact — 448 Plumbing">
-  <meta name="twitter:description" content="Contact 448 Plumbing for fast, friendly plumbing service in Dallas–Fort Worth.">
+  <meta name="twitter:description" content="Call or text 448 Plumbing at 214-718-6990 for plumbing estimates in Plano and Dallas–Fort Worth. Emergency service: 7 a.m.–10 p.m.">
   <meta name="twitter:image" content="https://www.448Plumbing.com/assets/logo.svg">
 </head>
 <body class="antialiased bg-[color:var(--color-bg)]">
@@ -32,15 +32,21 @@
       <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10">
         <div class="md:w-1/2" data-aos="fade-right">
           <p class="uppercase tracking-wide text-sm text-[color:var(--color-primary-soft)]">Contact 448 Plumbing</p>
-          <h1 class="mt-2 text-3xl md:text-4xl font-extrabold">Tell us what	you need help with.</h1>
+          <h1 class="mt-2 text-3xl md:text-4xl font-extrabold">Let’s talk about your plumbing project.</h1>
           <p class="mt-4 text-[color:var(--color-surface)]/90 text-sm md:text-base">Share a few details about your plumbing issue and we'll follow up with options, pricing, and availability.</p>
           <div class="mt-6 flex flex-col sm:flex-row gap-3">
             <a href="tel:2147186990" class="site-btn site-btn-gold px-6 py-3 rounded-md font-semibold">Call Now: 214-718-6990</a>
-            <a href="#contact-form" class="site-btn site-btn-dark px-6 py-3 rounded-md font-semibold">Schedule Service Online</a>
+            <a href="sms:+12147186990" data-contact-location="contact-hero" class="site-btn site-btn-dark px-6 py-3 rounded-md font-semibold">Text for an Estimate</a>
           </div>
         </div>
         <div class="md:w-1/2" data-aos="fade-left">
-          <img src="https://source.unsplash.com/featured/640x480/?plumbing,customer,phone" alt="Friendly plumbing service representative talking to a customer on the phone" loading="lazy" class="rounded-xl shadow-lg w-full h-full object-cover">
+          <div class="estimate-card">
+            <h2>Text your project details</h2>
+            <p>Send a message directly to <strong>214-718-6990</strong>. Include:</p>
+            <ul><li>Your name and the property’s city or ZIP code</li><li>What needs repair or what you’re planning to build</li><li>Your preferred timing and a few photos, if available</li></ul>
+            <a href="sms:+12147186990" data-contact-location="estimate-card" class="site-btn-gold px-6 py-3 rounded-md font-semibold inline-block">Start a Text</a>
+            <p class="estimate-note">On a computer? Text this number from your phone. For an urgent problem, call between 7 a.m. and 10 p.m. Estimates may require an on-site assessment.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -52,32 +58,32 @@
           <h2 class="text-2xl font-bold">Tell us about your project</h2>
           <p class="mt-2 text-sm text-[color:var(--color-muted)]">Complete the form and we'll reach out with next steps. For urgent leaks or backups, call us 7 a.m.–10 p.m.</p>
 
-          <form id="contactForm" action="https://formspree.io/f/mblandbp" method="POST" class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4" novalidate>
+          <form id="contactForm" action="https://formspree.io/f/mblandbp" method="POST" class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
             <input type="text" name="_gotcha" style="display:none">
             <input type="hidden" name="_next" value="https://www.448plumbing.com/thanks.html">
             <label class="block md:col-span-1 text-sm">
               <span class="block mb-1 font-medium">Name</span>
-              <input name="name" required class="w-full border border-[color:var(--color-border)] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[color:var(--color-primary)]"/>
+              <input name="name" autocomplete="name" required class="w-full border border-[color:var(--color-border)] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[color:var(--color-primary)]"/>
             </label>
             <label class="block md:col-span-1 text-sm">
               <span class="block mb-1 font-medium">Email</span>
-              <input name="email" type="email" required class="w-full border border-[color:var(--color-border)] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[color:var(--color-primary)]"/>
+              <input name="email" type="email" autocomplete="email" required class="w-full border border-[color:var(--color-border)] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[color:var(--color-primary)]"/>
             </label>
             <label class="block md:col-span-1 text-sm">
-              <span class="block mb-1 font-medium">Phone <span class="text-[color:var(--color-muted)] font-normal">(optional)</span></span>
-              <input name="phone" type="tel" pattern="[0-9\-\+\(\)\s]{7,}" class="w-full border border-[color:var(--color-border)] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[color:var(--color-primary)]" placeholder="Best number to reach you"/>
+              <span class="block mb-1 font-medium">Phone</span>
+              <input name="phone" type="tel" autocomplete="tel" required pattern="[0-9\-\+\(\)\s]{7,}" class="w-full border border-[color:var(--color-border)] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[color:var(--color-primary)]" placeholder="Best number to reach you"/>
             </label>
             <label class="block md:col-span-1 text-sm">
-              <span class="block mb-1 font-medium">ZIP Code <span class="text-[color:var(--color-muted)] font-normal">(optional)</span></span>
-              <input name="zip" type="text" pattern="[0-9]{5}" class="w-full border border-[color:var(--color-border)] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[color:var(--color-primary)]" placeholder="Where is the property located?"/>
+              <span class="block mb-1 font-medium">Property ZIP Code</span>
+              <input name="zip" type="text" autocomplete="postal-code" inputmode="numeric" required pattern="[0-9]{5}" class="w-full border border-[color:var(--color-border)] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[color:var(--color-primary)]" placeholder="Where is the property located?"/>
             </label>
             <label class="block md:col-span-2 text-sm">
               <span class="block mb-1 font-medium">How can we help?</span>
-              <textarea name="message" required rows="5" class="w-full border border-[color:var(--color-border)] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[color:var(--color-primary)]" placeholder="Tell us about the issue, when you first noticed it, and any photos or details that might help."></textarea>
+              <textarea name="message" required rows="5" class="w-full border border-[color:var(--color-border)] rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[color:var(--color-primary)]" placeholder="Tell us about the issue, when you first noticed it, and your preferred timing. You can text photos to 214-718-6990."></textarea>
             </label>
             <div class="md:col-span-2 flex flex-col sm:flex-row items-start sm:items-center gap-3 justify-between mt-2">
               <button type="submit" class="site-btn-gold px-6 py-3 rounded-md font-semibold">Send message</button>
-              <p class="text-xs text-[color:var(--color-muted)]">By submitting, you agree to be contacted about your service request. We never share your information.</p>
+              <p class="text-xs text-[color:var(--color-muted)]">By submitting, you ask 448 Plumbing to contact you about this service request. <a href="/privacy.html" class="underline">Privacy policy</a>.</p>
             </div>
           </form>
         </div>
@@ -87,6 +93,7 @@
             <h3 class="text-lg font-semibold">Call or text 448 Plumbing</h3>
             <p class="mt-2 text-[color:var(--color-muted)]">Licensed plumbers serving Dallas / Fort Worth with fast response times.</p>
             <p class="mt-4 font-semibold"><a href="tel:2147186990" class="site-link text-base">214-718-6990</a></p>
+            <p class="mt-2"><a href="sms:+12147186990" data-contact-location="contact-sidebar" class="site-link">Text for an estimate</a></p>
             <p class="mt-1"><a href="mailto:general@448plumbing.com" class="site-link">general@448plumbing.com</a></p>
             <p class="mt-3 text-xs text-[color:var(--color-muted)]">RMP M-12040 — Licensed &amp; insured.</p>
           </div>
@@ -95,7 +102,7 @@
             <h3 class="text-lg font-semibold">Service hours</h3>
             <ul class="mt-2 space-y-1 text-[color:var(--color-muted)]">
               <li><span class="font-medium text-[color:var(--color-text)]">Emergency:</span> 7 a.m.–10 p.m. for urgent leaks and backups</li>
-              <li><span class="font-medium text-[color:var(--color-text)]">Scheduling:</span> Daily 8:00 AM – 6:00 PM</li>
+              <li><span class="font-medium text-[color:var(--color-text)]">Scheduling:</span> Contact us to arrange an appointment</li>
             </ul>
           </div>
         </aside>

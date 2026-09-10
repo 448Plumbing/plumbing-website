@@ -81,16 +81,9 @@ if (-not $DryRun) {
             Set-Content -LiteralPath $_.FullName -Value $txt -Force
         } catch { Write-Warning "Failed to minify CSS: $($_.FullName) - $_" }
     }
-    Get-ChildItem -Path $Dist -Recurse -Include '*.js' -File | ForEach-Object {
-        try {
-            $txt = Get-Content -Raw -LiteralPath $_.FullName
-            # remove /* */ comments and // comments
-            $txt = [regex]::Replace($txt, '/\*.*?\*/', '', [System.Text.RegularExpressions.RegexOptions]::Singleline)
-            $txt = [regex]::Replace($txt, '//.*?$', '', [System.Text.RegularExpressions.RegexOptions]::Multiline)
-            $txt = [regex]::Replace($txt, '\s+', ' ')
-            Set-Content -LiteralPath $_.FullName -Value $txt -Force
-        } catch { Write-Warning "Failed to minify JS: $($_.FullName) - $_" }
-    }
+    # Preserve JavaScript source. Regex comment removal corrupts URL strings
+    # and regular expressions; whitespace folding can change JS semantics.
+
 }
 
 # Strip HTML comments (light) and optionally collapse whitespace between tags
