@@ -359,3 +359,27 @@ footer { background: var(--color-charcoal); color: var(--color-surface); }
 }
 
 
+
+/* Direct estimate contact and optional visitor analytics. */
+.estimate-card {background:#fff;color:#172033;padding:2rem;border-radius:1rem;box-shadow:0 12px 28px #0002;}
+.estimate-card h2 {font-size:1.5rem;font-weight:750;margin-bottom:1rem;}
+.estimate-card ul {list-style:disc;padding-left:1.25rem;margin:1rem 0 1.5rem;}
+.estimate-card li {margin:.5rem 0;}
+.estimate-card .estimate-note {font-size:.8rem;line-height:1.5;margin-top:1rem;color:#475569;}
+.mobile-contact-bar {display:none;}
+.analytics-choice {position:fixed;z-index:90;bottom:1rem;left:1rem;right:1rem;max-width:48rem;margin:0 auto;background:#fff;color:#172033;border:1px solid #cbd5e1;box-shadow:0 8px 30px #0003;border-radius:.75rem;padding:1rem;display:flex;gap:1rem;align-items:center;font-size:.875rem;}
+.analytics-choice[hidden] {display:none;}
+.analytics-choice p {flex:1;margin:0;}
+.analytics-choice a {text-decoration:underline;}
+.analytics-choice .analytics-actions {display:flex;gap:.5rem;flex-shrink:0;}
+.analytics-choice button {border:1px solid #334155;border-radius:.4rem;padding:.6rem .8rem;background:white;color:#172033;font-weight:600;}
+.analytics-choice button:focus-visible,.mobile-contact-bar a:focus-visible {outline:3px solid #f59e0b;outline-offset:3px;}
+.analytics-choice button[data-choice="yes"] {background:#243bb2;color:white;border-color:#243bb2;}
+@media(max-width:767px) {
+  body {padding-bottom:calc(4.25rem + env(safe-area-inset-bottom));}
+  .mobile-contact-bar {display:grid;grid-template-columns:1fr 1fr;position:fixed;z-index:80;bottom:0;left:0;right:0;background:#fff;padding:.55rem .65rem calc(.55rem + env(safe-area-inset-bottom));gap:.5rem;box-shadow:0 -3px 18px #0002;}
+  .mobile-contact-bar a {display:flex;align-items:center;justify-content:center;min-height:2.75rem;border-radius:.4rem;background:#172033;color:#fff;font-size:.8rem;font-weight:650;text-align:center;padding:.4rem;}
+  .mobile-contact-bar a:last-child {background:#3048c8;}
+  .analytics-choice {bottom:calc(4.75rem + env(safe-area-inset-bottom));display:block;}
+  .analytics-choice .analytics-actions {margin-top:.75rem;}
+}

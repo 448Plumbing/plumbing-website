@@ -135,3 +135,11 @@ async function boot() {
 }
 
 document.addEventListener('DOMContentLoaded', boot);
+
+// Visitor reporting and inquiry measurement are isolated from navigation.
+(function () {
+  const script = document.createElement('script');
+  script.src = '/assets/analytics.js';
+  script.defer = true;
+  document.head.appendChild(script);
+})();
